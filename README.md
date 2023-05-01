@@ -9,7 +9,7 @@
 
 # References
 
-  - [ARXIV](https://arxiv.org/)  
+  - [arXiv](https://arxiv.org/)  
   - [Paper with Code](https://paperswithcode.com/)  
 
 
