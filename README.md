@@ -2,6 +2,20 @@
 
 # Theory
 
+<details>
+  <summary><mark><font color=darkred>Basics</font></mark></summary>
+ 
+  ## 1D Array
+  ```python
+    np.array(3)
+  ```
+  ## 2D Array
+  ```python
+    np.array((3,4))
+  ```
+
+</details>
+
 
 # Code
 - Simple neuron
