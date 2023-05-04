@@ -1,6 +1,9 @@
 # TOC
 
-# Topics
+# Theory
+
+
+# Code
 - Simple neuron
 - Simple Neuron using Python Class
 - Batch Simple Neuron
