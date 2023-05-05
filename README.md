@@ -10,7 +10,9 @@
   ## Create 2D Array
   ```python
   # will create a matrix of 4 rows amd 3 cols
-  np.random.random(size=(4,3)) # or  np.random.uniform(size=(4,3))
+  # you can also use random unform
+  # np.random.uniform(size=(4,3))
+  np.random.random(size=(4,3)) # or  
  
   ```
 
