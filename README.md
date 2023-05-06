@@ -1,7 +1,8 @@
 # TOC
 
-# Theory
 
+<details>
+  <summary><mark><font color=darkred>Theory</font></mark></summary>
 
   ## Create 1D Array
   ```python
@@ -15,18 +16,23 @@
   np.random.random(size=(4,3)) # or  
  
   ```
+</details>
 
 <details>
   <summary><mark><font color=darkred>Basics</font></mark></summary>
 
 </details>
 
-
+<details>
+  <summary><mark><font color=darkred>Code</font></mark></summary>
+  
 # Code
 - Simple neuron
 - Simple Neuron using Python Class
 - Batch Simple Neuron
 - Batch Neuron using Python Class
+
+</details>
 
 
 - Image from iPad
