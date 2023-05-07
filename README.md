@@ -1,6 +1,10 @@
 # TOC
 
 
+`add basics of arrays and matrix`  
+`inout shape of each of the architecture`
+
+
 <details>
   <summary><mark><font color=darkred>Theory</font></mark></summary>
 
