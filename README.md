@@ -55,7 +55,7 @@
   class Layer:
 
   def __init__(self, ip_size, n_neurons):
-    self.w = np.random.uniform(size=(n_neurons, ip_size)).T
+    self.w = np.random.uniform(size=(ip_size,n_neurons))
     self.b = np.random.rand(n_neurons)
   
   def forward_pass(self, ip):
