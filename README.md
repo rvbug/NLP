@@ -1,9 +1,9 @@
 # TOC
 
 
-`learning path to be added - image`
-`add basics of arrays and matrix`  
-`input shape of each of the architecture`
+`learning path to be added - image`  
+`add basics of arrays and matrix from Notion notes`    
+`section on input shape of each of the architecture covered here`  
 
 
 <details>
