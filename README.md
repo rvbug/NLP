@@ -89,6 +89,8 @@
   print("\n output is \n", L3.output)
   
 ```
+![image](https://user-images.githubusercontent.com/10928536/236757612-27d4bf5a-7884-4466-9377-d571a4dc6c53.png)
+![image](https://user-images.githubusercontent.com/10928536/236768294-07ad9eeb-3618-407b-8f28-0a5377b0375e.png)
 
 
 # Batch Processing
@@ -120,22 +122,65 @@
 </details>
 
 <details>
-  <summary><mark><font color=darkred>Code</font></mark></summary>
+  <summary><mark><font color=darkred>Simple RNN</font></mark></summary>
   
-# Code
-- Simple neuron
-- Simple Neuron using Python Class
-- Batch Simple Neuron
-- Batch Neuron using Python Class
+  ```python
+  # for RNN the input shape is `(batch_size, time_step, input_features)
+  
+  ## np.random.uniform(size=(3, 4, 2)) has same shape as np.random.random([3,4,2])
+  
+  
+  import numpy as np
+  # 2 = number of batches
+  # 3 = input size
+  # 4 = neurons in the o/p layer
+  ip = np.random.random([2,3,4])
+  ip, ip.shape
+  
+  wt = np.random.random([4,3])
+  wt, wt.shape
+  
+  op = np.dot(ip, wt)
+  op, op.shape
+  
+  # this is magic
+  # 2 batches so we get 4 outputs of 2 batches each
+  
+  # if we don't give batche number and ip is changed to (3,4)
+  # then we get output 
+  
+  
+  # ------------- Using Keras ------------- #
+  import tensorflow as tf
+  from keras import Sequential
+  from keras.layers import Dense, SimpleRNN
+
+  model = Sequential()
+  # input shape = 3 timesteps with 4 featues
+  # 1 hidden layer with 5 neurons
+  model.add(SimpleRNN(5, input_shape=([3,4]), name="input"))
+  
+  model.add(Dense(1, activation='sigmoid'))
+  model.summary()
+  tf.keras.utils.plot_model(model, show_shapes=True)
+ 
+  ```
+  ![image](https://user-images.githubusercontent.com/10928536/236804652-121ef0ce-2323-42fa-92c2-d25c8bbd2000.png)
 
 </details>
 
+
+<details>
+  <summary><mark><font color=darkred>Bi-RNN</font></mark></summary>
+  
+
+</details>
 
 - Image from iPad
 
 
 # References
-
+  - [Keras] (https://keras.io/api/layers/)
   - [arXiv](https://arxiv.org/)  
   - [Paper with Code](https://paperswithcode.com/)  
 
