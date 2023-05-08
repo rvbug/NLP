@@ -5,6 +5,13 @@
 `add basics of arrays and matrix from Notion notes`    
 `section on input shape of each of the architecture covered here`  
 
+<details>
+  <summary><mark><font color=darkred>Learning Path</font></mark></summary>
+
+
+
+</details>
+
 
 <details>
   <summary><mark><font color=darkred>Theory</font></mark></summary>
