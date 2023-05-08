@@ -1,8 +1,9 @@
 # TOC
 
 
+`learning path to be added - image`
 `add basics of arrays and matrix`  
-`inout shape of each of the architecture`
+`input shape of each of the architecture`
 
 
 <details>
