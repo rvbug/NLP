@@ -14,7 +14,7 @@
 
 
 <details>
-  <summary><mark><font color=darkred>Theory</font></mark></summary>
+  <summary><mark><font color=darkred>1D & 2D Arrays</font></mark></summary>
 
   ## Create 1D Array
   ```python
@@ -30,12 +30,78 @@
   np.random.random(size=(2,3)) # or   
   ```
   ![image](https://user-images.githubusercontent.com/10928536/236746538-4482eca2-2ccb-4994-af58-fe3c85ec9a18.png)
-
   
 </details>
 
 <details>
-  <summary><mark><font color=darkred>Basics</font></mark></summary>
+  <summary><mark><font color=darkred>Processing</font></mark></summary>
+
+# Simple Processing
+  ```python
+  
+  import numpy as np
+  class Layer:
+
+  def __init__(self, ip_size, n_neurons):
+    self.w = np.random.uniform(size=(n_neurons, ip_size)).T
+    self.b = np.random.rand(n_neurons)
+  
+  def forward_pass(self, ip):
+    self.ip = ip
+    print("\n--------\n")
+    print("\n weight is \n", self.w)
+    print("\n bias is", self.b)
+    print("\n bias is", self.ip)
+    self.output = np.dot(self.ip, self.w) + self.b 
+    
+  
+  # input size can keep varying 
+  input_size = 3
+  input = np.random.rand(input_size)
+
+  # first Layer
+  L1 = Layer(input_size, 4)
+  L1.forward_pass(input)
+  print("\n output is \n", L1.output)
+
+  # second layer which has 
+  # 1st layer's output as input &
+  # 3 neuron in the second layer
+
+  L2 = Layer(L1.output.shape[0], 3)
+  L2.forward_pass(L1.output)
+  print("\n output is \n", L2.output)
+
+  L3 = Layer(L2.output.shape[0], 2)
+  L3.forward_pass(L2.output)
+  print("\n output is \n", L3.output)
+  
+```
+
+
+# Batch Processing
+  
+  ```python
+  bh = np.random.uniform(size=(4,3)) # (4,3) 4 = number of neurons and each input has 3 elements
+  bb = [2,1,4,5] #(4,) - number of hidden neurons in the hidden layer above
+
+  ip1 = [1,1,1]
+  o1 = np.dot(ip1, bh.T) + bb
+  print("1 batch i/p and 1 batch o/p ->", o1)
+
+  print("\n")
+
+  ip2 = [[1,1,1], [2,2,2]]
+  o2 = np.dot(ip2, bh.T) + bb
+  print("2 batches i/p and 2 batches o/p ->\n", o2)
+
+  print("\n")
+  bip = [[1,2,3], [4,5,6], [7,8,9]] #(3,3)
+
+  bo = np.dot(bip, bh.T) + bb
+  print("3 batches i/p and 3 batches o/p ->\n", bo)
+
+  ```
 
 </details>
 
