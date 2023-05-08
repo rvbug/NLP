@@ -14,7 +14,7 @@
 
 
 <details>
-  <summary><mark><font color=darkred>1D, 2D & 3D Arrays</font></mark></summary>
+  <summary><mark><font color=darkred>1D, 2D & 3D Arrays - Memory Representation</font></mark></summary>
 
   ## Create 1D Array
   ```python
@@ -31,16 +31,16 @@
   ```
   ![image](https://user-images.githubusercontent.com/10928536/236746538-4482eca2-2ccb-4994-af58-fe3c85ec9a18.png)
   
-    ## Create 2D Array
-    ```python  
+  ## Create 2D Array
+  ```python 
+  
+    import numpy as np
     # shape is (2, 2, 2)
-    
     np.array([
     [[2,3], [4,5]],
     [[6,7], [8,9]]
-    ])
-    
-    ```
+    ]) 
+  ```
   ![image](https://user-images.githubusercontent.com/10928536/236752424-f2c0e63c-6711-4cf9-bc29-133d3c4d3c0b.png)
   
 </details>
