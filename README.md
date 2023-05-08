@@ -125,7 +125,7 @@
   <summary><mark><font color=darkred>Simple RNN</font></mark></summary>
   
   ```python
-  # for RNN the input shape is `(batch_size, time_step, input_features)
+  # for RNN the input shape is `(batch_size, time_step/sequence_length, input_features)
   
   ## np.random.uniform(size=(3, 4, 2)) has same shape as np.random.random([3,4,2])
   
@@ -163,6 +163,23 @@
   model.add(Dense(1, activation='sigmoid'))
   model.summary()
   tf.keras.utils.plot_model(model, show_shapes=True)
+  
+  # to check layers' shape and their values
+  # i ranges from 0-4 or more depending on your layers
+  print(model.get_weights()[i], model.get_weights()[i].shape)
+  
+   # ------------- Using Keras ------------- #
+  
+  # you will get output of 2 sets with 4 values each having 3 features -> ([2,4,3])
+  
+  import tensorflow as tf
+  from keras import Sequential
+  from keras.layers import Dense, SimpleRNN
+  
+  simple_rnn = tf.keras.layers.SimpleRNN(10, input_shape=(np.random.random([2, 4,3])))
+  # to get all the features and hyperparam use 
+  simple_rnn.get_config()
+  
  
   ```
   ![image](https://user-images.githubusercontent.com/10928536/236804652-121ef0ce-2323-42fa-92c2-d25c8bbd2000.png)
@@ -176,11 +193,10 @@
 
 </details>
 
-- Image from iPad
-
 
 # References
-  - [Keras] (https://keras.io/api/layers/)
+  - [TensorFlow](https://www.tensorflow.org/)
+  - [Keras](https://keras.io/api/layers/)
   - [arXiv](https://arxiv.org/)  
   - [Paper with Code](https://paperswithcode.com/)  
 
