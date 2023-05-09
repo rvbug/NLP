@@ -90,9 +90,6 @@
   ```
 
 </details>
-
-<details>
-  <summary><mark><font color=darkred>Simple RNN</font></mark></summary>
   
   ```python
   # for RNN the input shape is `(batch_size, time_step/sequence_length, input_features)
@@ -135,7 +132,6 @@ a = np.array([10,20, 30,40, 50, 60, 70, 80, 90, 100])
   ```
   ![image](https://user-images.githubusercontent.com/10928536/236804652-121ef0ce-2323-42fa-92c2-d25c8bbd2000.png)
 
-</details>
 
 
 <details>
