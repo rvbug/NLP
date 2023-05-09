@@ -4,6 +4,7 @@
 `learning path to be added - image`  
 `add basics of arrays and matrix from Notion notes`    
 `section on input shape of each of the architecture covered here`  
+`code section should have all py file or ipynb file or maybe dagshub?`  
 
 <details>
   <summary><mark><font color=darkred>Learning Path</font></mark></summary>
