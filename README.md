@@ -100,55 +100,36 @@
   ## np.random.uniform(size=(3, 4, 2)) has same shape as np.random.random([3,4,2])
   
   
-  import numpy as np
-  # 2 = number of batches
-  # 3 = input size
-  # 4 = neurons in the o/p layer
-  ip = np.random.random([2,3,4])
-  ip, ip.shape
+# Start with very simple sequence of numbers
   
-  wt = np.random.random([4,3])
-  wt, wt.shape
-  
-  op = np.dot(ip, wt)
-  op, op.shape
-  
-  # this is magic
-  # 2 batches so we get 4 outputs of 2 batches each
-  
-  # if we don't give batche number and ip is changed to (3,4)
-  # then we get output 
-  
-  
-  # ------------- Using Keras ------------- #
-  import tensorflow as tf
-  from keras import Sequential
-  from keras.layers import Dense, SimpleRNN
+a = np.array([10,20, 30,40, 50, 60, 70, 80, 90, 100])
+# predict using RNN based on the last 3 i/p sequence
+# so create a dataset with 3 i/p features (previous 3) and 1 o/p (next number)
+# e.g. first window = [10,20,30,40] => i/p is 10,20,30 and o/p is 40
 
-  model = Sequential()
-  # input shape = 3 timesteps with 4 featues
-  # 1 hidden layer with 5 neurons
-  model.add(SimpleRNN(5, input_shape=([3,4]), name="input"))
+
+# steps 
+  # create a sliding window of 4 (3 prev + 1 next number)
+  # first window [10,20,30,40]
+  # where i/p feature = [10,20,30] & o/p feature 40
+  # second window [20,30,40,50]
+  # slide across for the entire dataset
+  # Data will finally looks like this
+
+  # input features        # output features
+  # [10,20,30,40]               50
+  # [20,30,40,50]               60
+  # [30,40,50,60]               70
+  # [40,50,60,70]               80
+  # [50,60,70,80]               90
+  # [60,70,80,90]               100
+
+# Finally the input shape will be  -> (7, 3, 1)
+# Where 7 will be the sequence number 
+  # 7 is total records in the dataset, 1 for each window of len 4
+# each record has 3 input feature per record
+# each input has single number which is 1
   
-  model.add(Dense(1, activation='sigmoid'))
-  model.summary()
-  tf.keras.utils.plot_model(model, show_shapes=True)
-  
-  # to check layers' shape and their values
-  # i ranges from 0-4 or more depending on your layers
-  print(model.get_weights()[i], model.get_weights()[i].shape)
-  
-   # ------------- Using Keras ------------- #
-  
-  # you will get output of 2 sets with 4 values each having 3 features -> ([2,4,3])
-  
-  import tensorflow as tf
-  from keras import Sequential
-  from keras.layers import Dense, SimpleRNN
-  
-  simple_rnn = tf.keras.layers.SimpleRNN(10, input_shape=(np.random.random([2, 4,3])))
-  # to get all the features and hyperparam use 
-  simple_rnn.get_config()
   
  
   ```
