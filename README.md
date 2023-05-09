@@ -50,74 +50,43 @@
   <summary><mark><font color=darkred>Processing</font></mark></summary>
 
 # Simple Processing
+ 
+  
   ```python
   
-  import numpy as np
-  class Layer:
-
-  def __init__(self, ip_size, n_neurons):
-    self.w = np.random.uniform(size=(ip_size,n_neurons))
-    self.b = np.random.rand(n_neurons)
+  # this processes inputs with one hidden layer of 4 neurons
+  # if input is one, we get 1 set (of 4) outputs
+  # Batch - if input is two, we get 2 sets (of 4) outputs
   
-  def forward_pass(self, ip):
+  class Layers:
+
+  def __init__(self, ip, wt):
     self.ip = ip
-    print("\n--------\n")
-    print("\n weight is \n", self.w)
-    print("\n bias is", self.b)
-    print("\n bias is", self.ip)
-    self.output = np.dot(self.ip, self.w) + self.b 
-    
+    self.wt = np.random.random([(self.ip), wt])
+    self.b = np.random.random([wt,])
+
+    print("ip batch is -> ",self.ip)
+    print("\n")
+    print("wt is", self.wt)
+    print("\n")
+    print("bias is",self.b)
+    print("\n")
   
-  # input size can keep varying 
-  input_size = 3
-  input = np.random.rand(input_size)
-
-  # first Layer
-  L1 = Layer(input_size, 4)
-  L1.forward_pass(input)
-  print("\n output is \n", L1.output)
-
-  # second layer which has 
-  # 1st layer's output as input &
-  # 3 neuron in the second layer
-
-  L2 = Layer(L1.output.shape[0], 3)
-  L2.forward_pass(L1.output)
-  print("\n output is \n", L2.output)
-
-  L3 = Layer(L2.output.shape[0], 2)
-  L3.forward_pass(L2.output)
-  print("\n output is \n", L3.output)
+  def forward(self):
+    op = np.dot(self.ip, self.wt) + self.b
+    print(op)
   
-```
-![image](https://user-images.githubusercontent.com/10928536/236757612-27d4bf5a-7884-4466-9377-d571a4dc6c53.png)
-![image](https://user-images.githubusercontent.com/10928536/236768294-07ad9eeb-3618-407b-8f28-0a5377b0375e.png)
-
-
-# Batch Processing
-  
+  ```
   ```python
-  import numpy as np
+ 
+  # single batch of 4 outputs
+  l1 = Layers(1, 4)
+  l1.forward()
   
-  bh = np.random.uniform(size=(3,4)) # (3,4) 4 = number of neurons and each input has 3 elements
-  bb = [2,1,4,5] #(4,) - number of hidden neurons in the hidden layer above
-
-  ip1 = [1,1,1]
-  o1 = np.dot(ip1, bh) + bb
-  print("1 batch i/p and 1 batch o/p ->", o1)
-
-  print("\n")
-
-  ip2 = [[1,1,1], [2,2,2]]
-  o2 = np.dot(ip2, bh) + bb
-  print("2 batches i/p and 2 batches o/p ->\n", o2)
-
-  print("\n")
-  bip = [[1,2,3], [4,5,6], [7,8,9]] #(3,3)
-
-  bo = np.dot(bip, bh) + bb
-  print("3 batches i/p and 3 batches o/p ->\n", bo)
-
+  # 3 batch of 4 outputs
+  l2 = Layers(3, 4)
+  l2.forward()
+  
   ```
 
 </details>
