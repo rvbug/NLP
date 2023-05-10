@@ -156,10 +156,29 @@ np.array([
 # If I have to pedict 2 numbers instead of 1 number
 # there is no change in the i/p sequence it will still be (7,3,1) but op will be (7,2) 
 
-# EXAMPLE - 3
-# Word level
+# For Word
+
+# input shape will be (num_sentences, max_sequence_length ,embedding_size)
+# num_sentences       - number of sentences in the dataset
+# max_sequence_length - is the max length in whole of the dataset
+# embedding_size      - size of word being represented as embedding  
+
+# output shape will be (num_sentences, embedding_size)
+# where each element in the o/p will be probability of word in the vocab
+# num_sentences  - number of words which needs to be predicted
+# embedding_size - representation of the word
+
+# EXAMPLE 
 
 
+
+
+
+# Typical step would be as follows
+#
+#
+#
+#
 
 
 ```
