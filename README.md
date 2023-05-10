@@ -226,6 +226,7 @@ sent4 = [15,16,17,18,19,20,21,22]
 # output shape (4,1)
 # Since there will be 4 outputs with 1 feature
 
+# EXAMPLE (using 2 features)
 
 
 
