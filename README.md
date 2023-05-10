@@ -170,16 +170,81 @@ np.array([
 
 # EXAMPLE 
 
+Sentence - "the quick brown fox jumps over the lazy dog"
+We will give two words and predict the 3rd word
+i/p - the quick o/p - brown
+i/p - quick brown o/p - fox etc
+
+step 1 - create a dictionary for individual words
+[0,1,2,3,4,5,6,7,0,8]
+
+# input           # output 
+# [0,1]               2
+# [1,2]               3
+# [2,3]               4
+# [3,4]               5
+# [4,5]               6
+# [5,0]               0
+# [0,6]               7
+
+# shape is (7,2,1)
+# 7 = input sequence
+# 2 = window size
+# 1 = 1 feature for each word
+
+X = [
+  [[0],[1]], [[1], [2]], [[2],[3]],[[3],[4]],[[4],[5]],[[5],[0]],[[0],[6]]
+  ]
+  
+# shape is (7,1)
+# because we are predicting 1 value for all 7 sequences of 2 words each
+
+y = [
+  [2],[3],[4],[5],[6],[0],[7]
+]
+
+# EXAMPLE (using word embeddings)
 
 
+# Typical step would be as follows for the example
+lst = ["I like to eat bananas.", "Bananas are yellow."]
 
-
-# Typical step would be as follows
-#
-#
-#
-#
-
+# Tokenize the text
+lst = ["I", "like", "to" , "eat" , "bananas", "." , "Bananas" "are" "yellow", "."]
+# assign unique index to each of them
+dt = {"I" : 0 , "like" : 1 , "to" : 2 , "eat" :3 , "bananas": 4, ".": 5 , "Bananas": 6 , "are": 7,  "yellow" :8 }
+# convert the text to integers
+t2i = [[0,1,2,3,4,5],[6,7,8, 5]]
+# pad to make it equal length of 10 each
+t2i = [[0,1,2,3,4,5,0,0,0,0],[6,7,8,5,0,0,0,0,0,0]]
+# create word embedding (e.g. Word2Vec or GloVe)
+# shape (9,3) - 9 is the unique words in vocab and 3 is the word representation of each word (3 dim vec)
+[[0.1, 0.2, 0.3],
+[0.4, 0.5, 0.6],
+[0.4, 0.3, -0.6],
+[0.3, 0.5, 0.6],
+[0.4, 0.5, 0.3],
+[0.4, -0.5, 0.2],
+[0.7, 0.5, -0.6],
+[0.8, 0.6, 0.3],
+[-0.1, 0.5, 0.6]]
+# create input output pairs
+# input                 # output 
+# [0,1,2,3,4]               5
+# [1,2,3,4,5]               0
+# [2,3,4,5,6]               7
+# [3,4,5,6,7]               8
+# convert i/p to word embeddings
+[[
+[0.1, 0.2, 0.3],
+[0.4, 0.5, 0.6],
+[0.4, 0.3, -0.6],
+[0.3, 0.5, 0.6],
+[0.4, 0.5, 0.3]]
+[[
+  [0.8, 0.6, 0.3],
+  [-0.1, 0.5, 0.6]]
+]]
 
 ```
 
