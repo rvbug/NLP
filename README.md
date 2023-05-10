@@ -130,10 +130,10 @@ a = np.array([10,20, 30,40, 50, 60, 70, 80, 90, 100])
 # [50,60,70,80]               90
 # [60,70,80,90]               100
 
-# Finally the input shape will be  -> (7, 3, 1)
-# Where 7 will be the sequence number 
-  # 7 is total records in the dataset, 1 for each window of len 4
-# each record has 3 input feature per record
+# Finally the input shape will be  -> (6, 4, 1)
+# Where 6 will be the sequence number 
+  # 6 is total records in the dataset, 1 for each window of len 4
+# each record has 4 input feature per record
 # each input has single number which is 1
 
 # EXAMPLE - 2 
@@ -203,6 +203,32 @@ y = [
   [2],[3],[4],[5],[6],[0],[7]
 ]
 
+
+# EXAMPLE (using one-hot)
+
+sent1 = The quick brown fox
+sent2 = jumps over the lazy dog
+sent3 = she sells seashells by the seashore
+sten4 = Peter piper picked a peak of pickled piper
+
+# tokenized
+# there will be 22 unique words on the volab
+# now represent each word and pad to the largest sentence (8)
+sent1 = [1,2,3,4,0,0,0,0]
+sent2 = [5,6,7,8,9,0,0,0]
+sent3 = [10,11,12,13,14,0,0,0]
+sent4 = [15,16,17,18,19,20,21,22]
+
+# input shape (4,8,1)
+# 4 sentences which each sent having len of 8
+# 1 is output feature
+
+# output shape (4,1)
+# Since there will be 4 outputs with 1 feature
+
+
+
+
 # EXAMPLE (using word embeddings)
 
 
@@ -245,6 +271,10 @@ t2i = [[0,1,2,3,4,5,0,0,0,0],[6,7,8,5,0,0,0,0,0,0]]
   [0.8, 0.6, 0.3],
   [-0.1, 0.5, 0.6]]
 ]]
+
+
+
+
 
 ```
 
