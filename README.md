@@ -153,12 +153,16 @@ np.array([
 # each with 3 input sequence and evey sequence having 2 values
 # output will be (7,1)
 
-
 # If I have to pedict 2 numbers instead of 1 number
 # there is no change in the i/p sequence it will still be (7,3,1) but op will be (7,2) 
-  
+
+# EXAMPLE - 3
+# Word level
+
+
+
+
 ```
-  ![image](https://user-images.githubusercontent.com/10928536/236804652-121ef0ce-2323-42fa-92c2-d25c8bbd2000.png)
 
 
 
