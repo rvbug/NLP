@@ -6,20 +6,40 @@
 `section on input shape of each of the architecture covered here`  
 `code section should have all py file or ipynb file or maybe dagshub?`  
 
-<details>
-  <summary><mark><font color=darkred>Learning Path</font></mark></summary>
-</details>
+# Learning Path
+
+- Arrays, Matrix & Tensors
+
+- Input, Output, Neural Network
+
+- Simple RNN
+   * understand input and output shapes
+   * simple program
+
+- LSTM
+   * understand input and output shapes
+   * simple program
 
 
 
 
-  ## Create 1D Array
+
+# Understanding Arrays, Matrix, Tensors
+
+  ### Create 1D Array
   ```python
     np.array(3)
   ```
+  
+  
+  <img src="https://user-images.githubusercontent.com/10928536/236743760-0edd86f5-1d7e-4b82-9bac-5a48a35e3b0c.png" width="60%", height="50%">Image</img>
+  
+  
   ![image](https://user-images.githubusercontent.com/10928536/236743760-0edd86f5-1d7e-4b82-9bac-5a48a35e3b0c.png) 
 
-  ## Create 2D Array
+  <img src="https://your-image-url.type" width="100" height="100">
+
+  ### Create 2D Array
   ```python
   # will create a matrix of 2 rows amd 3 cols
   # you can also use random unform
@@ -28,7 +48,7 @@
   ```
   ![image](https://user-images.githubusercontent.com/10928536/236746538-4482eca2-2ccb-4994-af58-fe3c85ec9a18.png)
   
-  ## Create 2D Array
+  ### Create 2D Array
   ```python 
   
     import numpy as np
@@ -46,8 +66,7 @@
   
 
 
-<details>
-  <summary><mark><font color=darkred>Processing</font></mark></summary>
+
 
 # Simple Processing
  
@@ -89,18 +108,8 @@
   
   ```
 
-</details>
 
 
-
-
-
-
-<details>
-  <summary><mark><font color=darkred>LSTM</font></mark></summary>
-  
-
-</details>
 
 
 # References
