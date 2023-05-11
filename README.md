@@ -101,7 +101,11 @@
   
   ```
 
+# RNN
+[SimpleRNN](https://github.com/rvbug/NLP/tree/main/simpleRNN#simple-rnn)
 
+# LSTM
+[LSTM](https://github.com/rvbug/NLP/tree/main/simpleRNN#simple-rnn)
 
 
 
