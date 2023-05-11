@@ -89,7 +89,9 @@ model = Sequential()
 # 1 hidden layer with 5 neuron
 # input will be of (Batchsize, input_sequence/time_steps/max_sequence_length, output_features)
 # batch size is auto calculated by TF so we need to give the other 2 
-# 8 is the max length overall and 1 is the output shape
+# 8 is the max length overall and 1 is the output shape that's why it is (8,1) - check x_train.shape
+# if you add another sentence which is greater than 8 words, you need to mention in this i/p shape
+# e.g. 
 model.add(SimpleRNN(5, input_shape=(8, 1), name="input"))
 # output layer is 1 with activation as sigmoid
 model.add(Dense(1, activation='sigmoid'))
