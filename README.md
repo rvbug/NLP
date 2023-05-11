@@ -31,8 +31,7 @@
     np.array(3)
   ```
   
-  
-  <img src="https://user-images.githubusercontent.com/10928536/236743760-0edd86f5-1d7e-4b82-9bac-5a48a35e3b0c.png" width="60%", height="50%">Image</img>
+ 
   
   
   ![image](https://user-images.githubusercontent.com/10928536/236743760-0edd86f5-1d7e-4b82-9bac-5a48a35e3b0c.png) 
