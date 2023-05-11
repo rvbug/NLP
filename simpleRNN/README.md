@@ -72,10 +72,10 @@ np.array([
 
 # EXAMPLE 
 
-Sentence - "the quick brown fox jumps over the lazy dog"
-We will give two words and predict the 3rd word
-i/p - the quick o/p - brown
-i/p - quick brown o/p - fox etc
+#Sentence - "the quick brown fox jumps over the lazy dog"
+#We will give two words and predict the 3rd word
+#i/p - the quick o/p - brown
+#i/p - quick brown o/p - fox etc
 
 step 1 - create a dictionary for individual words
 [0,1,2,3,4,5,6,7,0,8]
