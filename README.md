@@ -62,4 +62,4 @@ Enjoy!!
   - [Chris Ola - LSTM](https://colah.github.io/posts/2015-08-Understanding-LSTMs/)
 
 # What's next
-- Look at my [QNLP Repo](https://github.com/rvbug/QuantumML)  
+- View my for more advance NLP using Quantum Computing [QNLP Repo](https://github.com/rvbug/QuantumML)  
