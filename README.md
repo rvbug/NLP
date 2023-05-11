@@ -273,7 +273,7 @@ t2i = [[0,1,2,3,4,5,0,0,0,0],[6,7,8,5,0,0,0,0,0,0]]
   [-0.1, 0.5, 0.6]]
 ]]
 
-
+# final steps for RNN is as follows
 
 
 
@@ -281,8 +281,9 @@ t2i = [[0,1,2,3,4,5,0,0,0,0],[6,7,8,5,0,0,0,0,0,0]]
 
 
 
+
 <details>
-  <summary><mark><font color=darkred>Bi-RNN</font></mark></summary>
+  <summary><mark><font color=darkred>LSTM</font></mark></summary>
   
 
 </details>
