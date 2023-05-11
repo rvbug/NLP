@@ -87,7 +87,7 @@ print("\n dimensions are -> ", x_train.ndim, x_test.ndim, y_train.ndim, y_test.n
 model = Sequential()
 
 # 1 hidden layer with 5 neuron
-# input will be of (Batchsize, input_sequence or max_sequence_length, output_features)
+# input will be of (Batchsize, input_sequence/time_steps/max_sequence_length, output_features)
 # batch size is auto calculated by TF so we need to give the other 2 
 # 8 is the max length overall and 1 is the output shape
 model.add(SimpleRNN(5, input_shape=(8, 1), name="input"))
