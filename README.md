@@ -30,13 +30,9 @@
   ```python
     np.array(3)
   ```
-  
  
-  
-  
-  ![image](https://user-images.githubusercontent.com/10928536/236743760-0edd86f5-1d7e-4b82-9bac-5a48a35e3b0c.png) 
 
-  <img src="https://your-image-url.type" width="100" height="100">
+  <img src="https://user-images.githubusercontent.com/10928536/236743760-0edd86f5-1d7e-4b82-9bac-5a48a35e3b0c.png" width="400" height="200">
 
   ### Create 2D Array
   ```python
@@ -45,7 +41,8 @@
   # np.random.uniform(size=(2,3))
   np.random.random(size=(2,3)) # or   
   ```
-  ![image](https://user-images.githubusercontent.com/10928536/236746538-4482eca2-2ccb-4994-af58-fe3c85ec9a18.png)
+  <img src="https://user-images.githubusercontent.com/10928536/236746538-4482eca2-2ccb-4994-af58-fe3c85ec9a18.png" width="400" height="200">
+  
   
   ### Create 2D Array
   ```python 
@@ -61,7 +58,7 @@
     ## np.random.uniform(size=(3, 4, 2)) which has same shape as np.random.random([3,4,2])
   
   ```
-  ![image](https://user-images.githubusercontent.com/10928536/236752424-f2c0e63c-6711-4cf9-bc29-133d3c4d3c0b.png)
+  <img src="https://user-images.githubusercontent.com/10928536/236752424-f2c0e63c-6711-4cf9-bc29-133d3c4d3c0b.png" width="400" height="200">
   
 
 
