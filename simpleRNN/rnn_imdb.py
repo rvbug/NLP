@@ -75,6 +75,7 @@ model.add(Dense(units=vocab, activation='softmax'))
 model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
 model.fit(x, y, epochs=100, validation_data=(x, y), verbose=0)
 
+vocab_array = np.array(list(tokenizer.word_index.keys()))
 
 #--------------prediction------------------#
 def make_prediction(text, n_words):
