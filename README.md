@@ -13,7 +13,7 @@ Enjoy!!
 # TOC
 
 
-`learning path to be added - image`  
+`learning path to be added - image to be added tomorrow`  
 `add basics of arrays and matrix from Notion notes`    
 `section on input shape of each of the architecture covered here`  
 `code section should have all py file or ipynb file or maybe dagshub?`  
