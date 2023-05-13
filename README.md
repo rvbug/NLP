@@ -1,6 +1,7 @@
 # Introduction
 
 This github helps you understand the basics of NLP, architectures like RNN, LSTM and advanced ones like Transformers and Self Attention.  
+
 These topics are important to get you started. Code contains very simple explaination that you can use to build up your knowledge on such complex topics.
 
 I always had trouble understanding and transforming the inputs to feed to neural network so this is my attempt to help those who were as clueless as I was when I first started.
