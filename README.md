@@ -9,6 +9,8 @@ I always had trouble understanding and transforming the inputs to feed to neural
 We will first understand Matrix and Tensors, followed by simple code for each of the architectures. Basic understanding of NN, gates, attention etc.
 The code presented here does not have any end to end implementation but just enough to understand the missing ingredients. 
 
+One of the biggest challenge is to indefity input shape. lets start with that first!
+
 Enjoy!!
 
 # TOC
