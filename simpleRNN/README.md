@@ -1,9 +1,11 @@
 # Simple RNN
 
 ```python
-# input shape is `(batch_size, time_step/sequence_length, input_features)
-# The most difficult part was to understand
-# below is the explaination 
+
+# input shape is `(batch_size, time_step or sequence_length, features)
+- batch_size is None, and we can have the NN decide it
+- time_step is the sequence which you use to train NN 
+- feature is the output sequence you like NN to predict
 
 
 # Very simple sequence of numbers
