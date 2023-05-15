@@ -61,7 +61,7 @@ print(reshaped)
 Once you have reshaped the data, next would be to feed this to NN one data point at a time.
 
 ```python
-keras.Input(shape=(10,1))
+keras.Input(shape=(5,1))
 ```
 
 
@@ -131,7 +131,7 @@ print(two_five.shape) #(3, 2, 5)
 Input to Keras will be as follows
 
 ```python
-keras.Input(shape=(10,2))
+keras.Input(shape=(5,2))
 ```
 
 
