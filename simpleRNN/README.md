@@ -4,8 +4,10 @@
 
 # input shape is `(batch_size, time_step or sequence_length, features)
 - batch_size is None, and we can have the NN decide it
-- time_step is the sequence which you use to train NN 
-- feature is the output sequence you like NN to predict
+- time_step is the sequence which you use to train NN or value exists in a sequence  
+e.g [1,2,3,4] = 4 timesteps  
+- feature how many dimn are used to represente the data in 1 timestep
+e.g. if value is one-hot encoded to 10 values then feature is 10
 
 
 # Very simple sequence of numbers
@@ -19,9 +21,8 @@ a = np.array([10,20, 30,40, 50, 60, 70, 80, 90, 100])
 
 
 # steps 
-# create a sliding window of 4 (3 prev + 1 next number)
+# create a sliding window of 4 
 # first window [10,20,30,40]
-# where i/p feature = [10,20,30] & o/p feature 40
 # second window [20,30,40,50]
 # slide across for the entire dataset
 # Data will finally looks like this
@@ -58,7 +59,7 @@ np.array([
 # output will be (7,1)
 
 # If I have to pedict 2 numbers instead of 1 number
-# there is no change in the i/p sequence it will still be (7,3,1) but op will be (7,2) 
+# there is no change in the i/p sequence it will still be (7,3,2) but op will be (7,2) 
 
 # For Word
 
