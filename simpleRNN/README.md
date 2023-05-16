@@ -1,6 +1,6 @@
 # Simple RNN
 
-## RNN structure
+## RNN Foward Pass
 
 
 <img width="200" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/0d975713-3c65-4718-9e7b-2c3ce011eeba">
@@ -12,6 +12,10 @@ Sequence information is always mantained -
 
 `x1` `x2` are all inputs in the form of vectors   
 Number of neurons hidden layers will remain the same since o/p is fed back to the same hidden layers
+
+## RNN Backpropogration
+
+
 
 ## Understanding Input shape
 
