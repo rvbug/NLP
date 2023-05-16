@@ -157,7 +157,7 @@ keras.Input(shape=(5,2))
 
 ## RNN from scratch
 ```python
-# forward propogation
+# forward propogation only
 
 import numpy as np
 
