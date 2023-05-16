@@ -1,7 +1,9 @@
 # Simple RNN
 
+## Understanding Input shape
 
-## Input shape:
+
+### Input shape:
 
 `input_shape` - These are data (x dependent features & y independent feature)
 
@@ -135,6 +137,6 @@ keras.Input(shape=(5,2))
 ```
 
 
-
+## RNN from scratch
 
 
