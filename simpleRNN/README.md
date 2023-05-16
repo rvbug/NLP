@@ -10,8 +10,8 @@ Sequence information is always mantained -
 `o4` is dependent on `x4` and `o3`  
 `o3` is dependent on `x3` and `o2` etc..
 
-
-
+`x1` `x2` are all inputs in the form of vectors   
+Number of neurons hidden layers will remain the same since o/p is fed back to the same hidden layers
 
 ## Understanding Input shape
 
