@@ -2,7 +2,15 @@
 
 ## RNN structure
 
+
 <img width="200" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/0d975713-3c65-4718-9e7b-2c3ce011eeba">
+
+Sequence information is always mantained -
+
+`o4` is dependent on `x4` and `o3`  
+`o3` is dependent on `x3` and `o2` etc..
+
+
 
 
 ## Understanding Input shape
