@@ -1,5 +1,10 @@
 # Simple RNN
 
+## RNN structure
+
+<img width="372" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/0d975713-3c65-4718-9e7b-2c3ce011eeba">
+
+
 ## Understanding Input shape
 
 
