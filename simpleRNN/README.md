@@ -14,7 +14,7 @@ Sequence information is always mantained -
 Number of neurons hidden layers will remain the same since o/p is fed back to the same hidden layers
 
 ## RNN Backpropogration
-<img width="200" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/358b5c81-cde2-45ba-987e-1215536e2f28">
+<img width="300" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/358b5c81-cde2-45ba-987e-1215536e2f28">
 
 
 
@@ -156,5 +156,37 @@ keras.Input(shape=(5,2))
 
 
 ## RNN from scratch
+```python
+# forward propogation
 
+import numpy as np
+
+x0 = np.array([[1, 2, 3]])
+print("initial inputs", x0.shape)
+x1 = np.array([[1, 1, 1]])
+print("1st input ", x1.shape)
+x2 = np.array([[2, 2, 2]])
+print("2nd input ",x2.shape)
+w = np.array([[1,2,3], [4,5,6], [5,6,6]])
+print("input weight ", w.shape)
+w1 = np.array([[1,1,1], [2,2,2], [3,3,3]])
+print("output weights ", w1.shape)
+
+### output will be
+# initial inputs (1, 3)
+# 1st input  (1, 3)
+# 2nd input  (1, 3)
+# input weight  (3, 3)
+# output weights  (3, 3)
+
+o1 = np.dot(x1, w ) + np.dot(x0, w)
+print(o1, o1.shape)
+o2 = np.dot(x2, w) + np.dot(o1, w1)
+print(o2, o2.shape)
+
+### output will be
+# [[34 43 48]] (1, 3)
+# [[284 290 294]] (1, 3)
+
+```
 
