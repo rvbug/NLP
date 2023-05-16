@@ -14,6 +14,7 @@ Sequence information is always mantained -
 Number of neurons hidden layers will remain the same since o/p is fed back to the same hidden layers
 
 ## RNN Backpropogration
+<img width="200" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/358b5c81-cde2-45ba-987e-1215536e2f28">
 
 
 
