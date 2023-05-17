@@ -16,8 +16,9 @@ Each gates have their own set of weights which will help them learn (yes they ar
 <img width="500" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/912354ef-5414-4945-81e7-cee09b18cd96">
 
 
-## simple code
+## Simple code
 
+### Description
 ```python
 
 ### biases
@@ -51,6 +52,7 @@ Each gates have their own set of weights which will help them learn (yes they ar
 
 ```
 
+### Code
 
 ```python
 import numpy as np
