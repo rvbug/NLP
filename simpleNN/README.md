@@ -43,4 +43,4 @@ print(o2)
 ```
 
 ## Simple program
-[Using Class](simpleNN/simple_nn.py)
+[Using Class](https://github.com/rvbug/NLP/blob/main/simpleNN/simple_nn.py))
