@@ -13,7 +13,7 @@ Each gates have their own set of weights which will help them learn (yes they ar
 
 ## Gates
 
-<img width="650" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/87581e09-d93e-456e-b5e5-ddef70e95ce4">
+<img width="800" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/87581e09-d93e-456e-b5e5-ddef70e95ce4">
 
 
 ## Simple code
