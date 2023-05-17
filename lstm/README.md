@@ -30,8 +30,8 @@ Each gates have their own set of weights which will help them learn (yes they ar
 
 
 # References
-[2019 LSTM Paper](https://arxiv.org/pdf/1909.09586.pdf)
-[Chris Olah LSTM Introduction](https://colah.github.io/posts/2015-08-Understanding-LSTMs/)
-[YT - StatQuest](https://youtu.be/YCzL96nL7j0)
-[YT - MIT Lecture](https://youtu.be/ySEx_Bqxvvo)
-[YT - Krish](https://www.youtube.com/watch?v=FLjn0H2bCvA)
+[2019 LSTM Paper](https://arxiv.org/pdf/1909.09586.pdf)  
+[Chris Olah LSTM Introduction](https://colah.github.io/posts/2015-08-Understanding-LSTMs/)  
+[YT - StatQuest](https://youtu.be/YCzL96nL7j0)  
+[YT - MIT Lecture](https://youtu.be/ySEx_Bqxvvo)  
+[YT - Krish](https://www.youtube.com/watch?v=FLjn0H2bCvA)  
