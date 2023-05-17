@@ -1,5 +1,7 @@
 # LSTM
 
+## Introduction
+
 Due to the exploding/vanishing gradients in RNNs, LSTM was introduced which can remember longer sequences.
 
 There are 3 gates, forget gate, input gate and output gate.
@@ -9,12 +11,12 @@ What is the data which it needs to pay attention to
 
 Each gates have their own set of weights which will help them learn (yes they are fully diffentiable)
 
-## gates and variables
+## Gates
 
 <img width="500" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/912354ef-5414-4945-81e7-cee09b18cd96">
 
 
-
+#
 
 
 
