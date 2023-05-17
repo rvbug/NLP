@@ -41,3 +41,6 @@ o2 = np.dot(ip3, bh)
 print(o2)
 
 ```
+
+## Simple program
+[Using Class](simpleNN/simple_nn.py)
