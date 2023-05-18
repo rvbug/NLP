@@ -75,7 +75,7 @@ print_dec(y_sig3)
  
 ## output state 
 ht = ct * y_sig3
-final hidden state ct is  ->
+print("final hidden state ct is  ->")
 print_dec(ht)
 print("final cell state of LSTM layer is ->")
 print_dec(ct)
