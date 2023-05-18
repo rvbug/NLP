@@ -26,7 +26,7 @@ Enjoy!!
   Diagram goes here
 
 
-# Learning Path Details
+# Details
 
 - Arrays, Matrix & Tensors
 
