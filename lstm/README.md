@@ -27,44 +27,6 @@ model.add(LSTM(128, input_shape=(Sequence_length, length_of_unique_words))
 
 ## Simple code
 
-
-
-### Description
-```python
-
-### biases
-
-# bf = bias forget gate
-# bti = bias tanh i/p gate
-# bsi = bias sigmoid i/p gate
-# bio = boas o/p gate
-
-
-### inputs
-# ht1 = previous hidden state
-# ct1 = previous cell state
-# xt = inputs
-
-### weights
-
-# ht1w1 = wt to 1st sigmoid
-# ht1w2 = wt to 1st sigmoid
-# ht1w3 = wt to 1st sigmoid
-# ht1w4 = wt to 1st sigmoid
-# x1w1 = wt i/p to 1st sigmoid
-# x2w2 = wt on st tanh 
-# x3w3 = wt i/p to 2nd sigmoid
-# x4w4 = wt i/p to final sigmoid
-
-### final outputs
-# ht = current hidden state
-# ct = current cell state
-
-
-```
-
-### Code
-
 Find optimized code [here](https://github.com/rvbug/NLP/blob/main/lstm/simple_lstm.py)
 
 ```python
