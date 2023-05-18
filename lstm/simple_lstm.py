@@ -75,9 +75,13 @@ print_dec(y_sig3)
  
 ## output state 
 ht = ct * y_sig3
-print("final hidden state ct is  ->")
+print("final hidden state ht is  ->")
+print("final hidden state becomes ht1")
+ht = ht1
 print_dec(ht)
 print("final cell state of LSTM layer is ->")
+print("final cell state becomes ct1")
+ct = ct1
 print_dec(ct)
 
 
