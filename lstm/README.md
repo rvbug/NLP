@@ -11,6 +11,15 @@ What is the data which it needs to pay attention to
 
 Each gates have their own set of weights which will help them learn (yes they are fully diffentiable)
 
+## Input shape
+
+```python
+model.add(LSTM(128, input_shape=(Sequence_length, length_of_unique_words))
+# sequence length        - window (see Simple RNN)
+# length_of_unique_words - your vocabulary size
+
+```
+
 ## Gates
 
 <img width="800" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/87581e09-d93e-456e-b5e5-ddef70e95ce4">
