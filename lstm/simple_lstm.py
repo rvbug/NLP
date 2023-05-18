@@ -1,32 +1,3 @@
-### biases
-
-# bf = bias forget gate
-# bti = bias tanh i/p gate
-# bsi = bias sigmoid i/p gate
-# bio = boas o/p gate
-
-
-### inputs
-# ht1 = previous hidden state
-# ct1 = previous cell state
-# xt = inputs
-
-### weights
-
-# ht1w1 = wt to 1st sigmoid
-# ht1w2 = wt to 1st sigmoid
-# ht1w3 = wt to 1st sigmoid
-# ht1w4 = wt to 1st sigmoid
-# x1w1 = wt i/p to 1st sigmoid
-# x2w2 = wt on st tanh 
-# x3w3 = wt i/p to 2nd sigmoid
-# x4w4 = wt i/p to final sigmoid
-
-### final outputs
-# ht = current hidden state
-# ct = current cell state
-
-
 import numpy as np
 
 # common functions
@@ -42,99 +13,41 @@ def fn_sigmoid(x):
 ###### inputs ###### 
 ct1 = 2  # previous cell state
 xt = 1   # current input
-ht1 = 1  # previous hidden state (o/p)
+ht1= 1  # previous hidden state (o/p)
 
 ###### weights ###### 
-ht1w1 = 2.70
-x1w1 = 1.63
-# for tanh
-ht1w4 = 1.41
-x1w4 = 0.94
-# for 2nd sigmoid
-ht1w2 = 2.00
-x2w2 = 1.65
-# for 3 sigmoid
-ht1w3 = 4.38
-x1w3 = -0.19
+
+wf = 0.1
+wi = 0.1
+wo = 0.2
+wc = 0.3
+
 ###### biases ###### 
-bf = 1.62
-bti = -0.32
-bsi = 0.62 # 2nd sigmoid
-bo = 0.59  # output
 
+bf = 0.2
+bi = 0.3
+bo = 0.1
+bc = 0.2
 
-###### Start calculations ###### 
+###### forget ###### 
+ft = fn_sigmoid((ht1 * wf) + (xt * wf) + bf)
+###### input ###### 
+it = fn_sigmoid((ht1 * wi) + (xt * wi) + bi)
+###### cell  ###### 
+ct_hat = np.tanh((ht1 * wc) + (xt * wc) + bc)
+ct = ft * ct1 + (it * ct_hat)
 
-#1st sigmoid 
+###### final state  ###### 
+ot = fn_sigmoid((ht1 * wo) + (xt * wo) + bo)
+ht = np.tanh(ct) * ot
 
-y = fn_sigmoid((ht1 * ht1w1) + (xt * x1w1) + bf)
-print("first sigmoid output ->")
-print_dec(y)
-ct1 = ct1 * y
-print("value of long term cell state -> ")
-print_dec(ct1)
-
-
-# to tanh  
-y_tanh = np.tanh((ht1 * ht1w4) + (x1 * x1w4) + (bti))
-print("output of tanh -> ")
-print_dec(y_tanh)
-
-
-#to 2nd Sigmoid  
-
-y_sig2 = fn_sigmoid((ht1 * ht1w2) + (x1 * x2w2) + (bsi))
-print("output of 2nd sigmoid -")
-print_dec(y_sig2)
-ct1 = ct1 + y_sig2 * y_tanh
-print("value of long term cell state -> ")
-print_dec(ct1)
-
-
-# final layer  
-
-ct = np.tanh(ct1)
-print("cell state last tanh ->")
-# this is the pottential short term memory
+print("final cell state : ")
 print_dec(ct)
-
-y_sig3 = fn_sigmoid((ht_1 * ht1w3) + (x1 * x1w3) + (bo))
-print("output of 2nd sigmoid ->")
-print_dec(y_sig3)
- 
-## output state 
-ht = ct * y_sig3
-print("final hidden state ht is  ->")
-print("final hidden state becomes ht1")
-ht = ht1
+print("final hidden state to next layer : ")
 print_dec(ht)
-print("final cell state of LSTM layer is ->")
-print("final cell state becomes ct1")
-ct = ct1
-print_dec(ct)
 
-
-################ output ################ 
-
-# first sigmoid output ->
-# 1.00
-# value of long term cell state -> 
-# 1.99
-# output of tanh -> 
-# 0.97
-# output of 2nd sigmoid -
-# 0.99
-# value of long term cell state -> 
-# 2.95
-# cell state last tanh ->
-# 0.99
-# output of 2nd sigmoid ->
-# 0.99
-# final hidden state ht is  ->
-# final hidden state becomes ht1
-# 1.00
-# final cell state of LSTM layer is ->
-# final cell state becomes ct1
-# 2.95
-
-
+############## output ############## 
+# final cell state : 
+# 1.61
+# final hidden state to next layer : 
+# 0.57
