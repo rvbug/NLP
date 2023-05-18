@@ -21,8 +21,8 @@ model.add(LSTM(128, input_shape=(Sequence_length, length_of_unique_words))
 ```
 
 ## Gates
+<img width="771" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/e0daa4c5-c413-40ce-ad40-6b23e73520c6">
 
-<img width="800" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/87581e09-d93e-456e-b5e5-ddef70e95ce4">
 
 
 ## Simple code
