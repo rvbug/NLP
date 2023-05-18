@@ -84,10 +84,12 @@ Run [this](https://github.com/rvbug/NLP/blob/main/lstm/simple_lstm.py) script
 # 0.99
 # output of 2nd sigmoid ->
 # 0.99
-# final hidden state ct is  ->
-# 0.99
+# final hidden state ht is  ->
+# final hidden state becomes ht1
+# 1.00
 # final cell state of LSTM layer is ->
-# 0.99
+# final cell state becomes ct1
+# 2.95
 
 ```
 
