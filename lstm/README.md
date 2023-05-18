@@ -27,6 +27,8 @@ model.add(LSTM(128, input_shape=(Sequence_length, length_of_unique_words))
 
 ## Simple code
 
+
+
 ### Description
 ```python
 
