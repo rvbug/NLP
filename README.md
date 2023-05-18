@@ -23,19 +23,27 @@ Enjoy!!
 
 # Learning Path
 
+  Diagram goes here
+
+
+# Learning Path Details
+
 - Arrays, Matrix & Tensors
 
 - Simple Neural Network
+   * understand input and output shapes
+   * simple program
 
 - Simple RNN
    * understand input and output shapes
    * simple program
 
 - LSTM
-   * understand input and output shapes
    * simple program
 
 
+- Transformers
+    * basics of attention model
 
 
 # Basics
