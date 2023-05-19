@@ -8,8 +8,47 @@ There are 3 gates, forget gate, input gate and output gate.
 These gates will help us what to forget, switch to a new context, what to remember and what to pay attention to.
 What is the data which it needs to pay attention to
 
-
 Each gates have their own set of weights which will help them learn (yes they are fully diffentiable)
+
+## Concat
+```python
+x = np.random.random((5,1))
+y = np.random.random((6,1))
+
+print(x,"\n\n", y)
+z = np.concatenate((x, y))
+print(z)
+
+########## output
+
+# [[0.61453294]
+#  [0.50259992]
+#  [0.01336285]
+#  [0.26558368]
+#  [0.29504331]] 
+
+#  [[0.78379103]
+#  [0.52628384]
+#  [0.97248502]
+#  [0.0859092 ]
+#  [0.23836397]
+#  [0.35459217]]
+
+# array([[0.61453294],
+#        [0.50259992],
+#        [0.01336285],
+#        [0.26558368],
+#        [0.29504331],
+#        [0.78379103],
+#        [0.52628384],
+#        [0.97248502],
+#        [0.0859092 ],
+#        [0.23836397],
+#        [0.35459217]])
+
+
+```
+
 
 ## Input shape
 
