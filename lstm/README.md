@@ -83,7 +83,25 @@ np.multiply(a, b)
 <img width="771" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/7853ea86-5882-4f57-a061-e12c3c562400">
 
 
-## Input shape
+## Inputs 
+
+1. Current input shape (xt) is contact with previous hidden state (ht1)
+2. Every LSTM layer has 4 Feed Forward Neural Network (ip, op, forget, cell)
+3. Each of these NN can have hidden layer as well
+
+If 
+A = number of FF NN  
+H = Hidden state  
+I = input size    
+Then Number of Paramaters are calculated using [N × ( H (H + i) + H )]. 
+
+```python
+input = Input((None, 5)) # xt = 5
+ouput = LSTM(2)(input)   # every NN will have 2 hidden layer each
+model = Model(input, output) 
+````
+
+## Shapes
 
 ```python
 model.add(LSTM(128, input_shape=(Sequence_length, length_of_unique_words))
