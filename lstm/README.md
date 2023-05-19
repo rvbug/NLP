@@ -83,11 +83,6 @@ np.multiply(a, b)
 <img width="771" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/7853ea86-5882-4f57-a061-e12c3c562400">
 
 
-## Simple code
-
-Find optimized code [here](https://github.com/rvbug/NLP/blob/main/lstm/lstm.py)
-
-
 ## Input shape
 
 ```python
