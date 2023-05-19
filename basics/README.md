@@ -35,4 +35,31 @@
   <img src="https://user-images.githubusercontent.com/10928536/236752424-f2c0e63c-6711-4cf9-bc29-133d3c4d3c0b.png" width="400" height="200">
 
 
+  ### Matrix Addition
+
+Note: this will all make sense during LSTM
+  
+  ```python
+import numpy as np
+
+a  = np.array([1,2,3])
+b = np.array([1,2,3])
+
+print("shape of a ->", a.shape)
+print("shape of b ->", b.shape)
+print("a matrix ->", a) 
+print("b matrix ->", b)
+print("a+b = ", a + b)
+
+###### output
+# shape of a -> (3,)
+# shape of b -> (3,)
+# a matrix -> [1 2 3]
+# b matrix -> [1 2 3]
+# a+b =  [2 4 6]
+
+```
+  
+
+
  ### Reshape
