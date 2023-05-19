@@ -85,7 +85,7 @@ np.multiply(a, b)
 
 ## Simple code
 
-Find optimized code [here](https://github.com/rvbug/NLP/blob/main/lstm/simple_lstm.py)
+Find optimized code [here](https://github.com/rvbug/NLP/blob/main/lstm/lstm.py)
 
 ```python
 
@@ -156,7 +156,7 @@ bo = 0.59  # output
 
 ###### Start calculations ###### 
 
-#1st sigmoid 
+# 1st sigmoid 
 
 y = fn_sigmoid((ht1 * ht1w1) + (xt * x1w1) + bf)
 print("first sigmoid output ->")
@@ -172,7 +172,7 @@ print("output of tanh -> ")
 print_dec(y_tanh)
 
 
-#to 2nd Sigmoid  
+# to 2nd Sigmoid  
 
 y_sig2 = fn_sigmoid((ht1 * ht1w2) + (x1 * x2w2) + (bsi))
 print("output of 2nd sigmoid -")
