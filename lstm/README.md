@@ -17,7 +17,8 @@ y = np.random.random((6,1))
 
 print(x,"\n\n", y)
 z = np.concatenate((x, y))
-print(z)
+print("\n" z)
+print(z.shape)
 
 ########## output
 
@@ -46,9 +47,23 @@ print(z)
 #        [0.23836397],
 #        [0.35459217]])
 
+# (11,1)
 
 ```
+## Shapes 
+```python
+s = np.random.random((4,1))
+t = np.random.random((4,))
+print(s.shape, t.shape )
+u = s + t
+print("after adding -> ", u.shape)
 
+##### output 
+# (4, 1) (4,)
+# after adding ->  (4, 4)
+
+
+```
 
 ## Input shape
 
