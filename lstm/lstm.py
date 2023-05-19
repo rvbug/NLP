@@ -10,6 +10,8 @@ def fn_sigmoid(x):
 
 
 ####### init phase
+# k => number of lstm layer required
+
 k = np.random.random((4))
 bi = np.random.random(k.shape[0])
 
@@ -31,11 +33,10 @@ print(bi.shape)
 
 ####### Input Gates (it)
 
-# k => number of lstm layer required
-# wi => `weight in forget layer` = k * (shape[0] of x, shape[0] of ht)
 # 1> concat x and ht
 # 2> multiply it with output of 1 & 2  
 
+# wi => `weight in forget layer` = k * (shape[0] of x, shape[0] of ht)
 wi = np.random.random((k.shape[0], conct.shape[0]))
 print(wi.shape, conct.shape , bi.shape)
 it = fn_sigmoid(np.dot(wi, conct) + bi)
