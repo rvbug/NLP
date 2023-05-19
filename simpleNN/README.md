@@ -41,6 +41,10 @@ o2 = np.dot(ip3, bh)
 print(o2)
 
 ```
+## Neural Network
+
+<img width="1073" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/4dbeba80-7adc-4ddf-a697-d84479cb7528">
+
 
 ## Simple program
 [Using Simple Class](https://github.com/rvbug/NLP/blob/main/simpleNN/simple_nn.py)
