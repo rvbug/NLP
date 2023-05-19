@@ -37,7 +37,7 @@
 
   ### Matrix Addition
 
-Note: this will all make sense during LSTM
+`Note: this will all make sense during LSTM`
   
   ```python
 import numpy as np
