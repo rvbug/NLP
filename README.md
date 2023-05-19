@@ -71,6 +71,7 @@ Enjoy!!
   - [Paper with Code](https://paperswithcode.com/)  
   - [Kaggle](https://kaggle.com)
   - [Chris Ola - LSTM](https://colah.github.io/posts/2015-08-Understanding-LSTMs/)
+  - [LaTeX Reference](https://www.latex4technics.com/?note=GW021J)
 
 # What's next
 View My Quantum NLP Repo -  [QNLP ](https://github.com/rvbug/QuantumML)  
