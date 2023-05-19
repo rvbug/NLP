@@ -8,8 +8,9 @@ There are 3 gates, forget gate, input gate and output gate.
 These gates will help us what to forget, switch to a new context, what to remember and what to pay attention to.
 What is the data which it needs to pay attention to
 
-Each gates have their own set of weights which will help them learn (yes they are fully diffentiable)
+Each gates have their own set of weights , this makes them [differentiable](https://en.wikipedia.org/wiki/Differentiable_function) helping them to learn
 
+To understand LSTM, the following concepts must be clear
 
 ## Concat
 ```python
