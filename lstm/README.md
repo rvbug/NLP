@@ -10,6 +10,7 @@ What is the data which it needs to pay attention to
 
 Each gates have their own set of weights which will help them learn (yes they are fully diffentiable)
 
+
 ## Concat
 ```python
 x = np.random.random((5,1))
@@ -50,7 +51,8 @@ print(z.shape)
 # (11,1)
 
 ```
-## Shapes 
+
+## Addition 
 ```python
 s = np.random.random((4,1))
 t = np.random.random((4,))
@@ -61,16 +63,17 @@ print("after adding -> ", u.shape)
 ##### output 
 # (4, 1) (4,)
 # after adding ->  (4, 4)
-
-
 ```
 
-## Input shape
-
+## Hardamard 
 ```python
-model.add(LSTM(128, input_shape=(Sequence_length, length_of_unique_words))
-# sequence length        - window (see Simple RNN)
-# length_of_unique_words - your vocabulary size
+a = [1,2,3]
+b = [3,2,1]
+
+np.multiply(a, b)
+
+### output
+[3,4,3]
 
 ```
 
@@ -223,13 +226,18 @@ print_dec(ct)
 # final cell state of LSTM layer is ->
 # final cell state becomes ct1
 # 2.95
-
-
-
 ```
 
 
+## Input shape
 
+
+```python
+model.add(LSTM(128, input_shape=(Sequence_length, length_of_unique_words))
+# sequence length        - window (see Simple RNN)
+# length_of_unique_words - your vocabulary size
+
+```
 
 
 
