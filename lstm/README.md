@@ -79,8 +79,8 @@ np.multiply(a, b)
 ```
 
 ## Gates
-<img width="771" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/e0daa4c5-c413-40ce-ad40-6b23e73520c6">
 
+<img width="771" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/7853ea86-5882-4f57-a061-e12c3c562400">
 
 
 ## Simple code
