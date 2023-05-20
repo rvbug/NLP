@@ -62,7 +62,8 @@ Enjoy!!
 # LSTM
 [LSTM](https://github.com/rvbug/NLP/tree/main/simpleRNN#simple-rnn)
 
-
+# Transformers & Attention
+[Transformer](https://github.com/rvbug/NLP/tree/main/transformers)
 
 # References
   - [TensorFlow](https://www.tensorflow.org/)
