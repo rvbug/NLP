@@ -1,6 +1,6 @@
 # Understanding Arrays, Matrix, Tensors
 
-  ### Create 1D - Array
+  ### Create 1D Array - Vector
   ```python
     np.array(3)
   ```
