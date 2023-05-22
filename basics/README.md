@@ -18,7 +18,7 @@
   <img src="https://user-images.githubusercontent.com/10928536/236746538-4482eca2-2ccb-4994-af58-fe3c85ec9a18.png" width="400" height="200">
   
   
-  ### Create 2D Array
+  ### Create 3D - Tensors
   ```python 
   
     import numpy as np
