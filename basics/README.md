@@ -1,6 +1,6 @@
 # Understanding Arrays, Matrix, Tensors
 
-  ### Create 1D Array
+  ### Create 1D - Array
   ```python
     np.array(3)
   ```
@@ -8,7 +8,7 @@
 
   <img src="https://user-images.githubusercontent.com/10928536/236743760-0edd86f5-1d7e-4b82-9bac-5a48a35e3b0c.png" width="400" height="200">
 
-  ### Create 2D Array
+  ### Create 2D - Matrix
   ```python
   # will create a matrix of 2 rows amd 3 cols
   # you can also use random unform
