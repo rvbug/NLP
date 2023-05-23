@@ -59,11 +59,20 @@ Embedding helps representing words in any number of dimensions and is usually de
 
 
 ## Positional Encoding
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
+## Multi-Head Attention
 
-
-
-
+N = Vocab size (all the words in your corpus)
+n = Maximum sequence length in (# of words with largest sentence) *[2048 in GPT-3]*
+dim = Embedding Dimensions *(usually 512)*
 
 
 
