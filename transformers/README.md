@@ -49,12 +49,36 @@ For building features, one can use the FCNN (*F*ully *C*onnected *N*eural *N*etw
 <img width="700" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/decf4f74-c119-43d7-b619-59a5caf425b8">
 
 
-## Self Attention
+## Embeddings
+The Transformer models will be very large with over billion parameters if we do not use embeddings.  Embeddings helps reduces the parameters.
+The lower the parameters, the semantic meaning might not be captured with greater accuracy. Higer the parameters, the computation costs will be high.
+This is the trade off.
+
+Embeddings are nothing but projecting matrix from one space to another using matrix multiplication
+Embedding helps representing words in any number of dimensions and is usually dense (vs sparse if you use one-hot encoding).
+
+
+## Positional Encoding
 
 
 
 
 
 
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 # References
 [Attention is all you need](https://)
+[Jay Alammar's Blog](http://jalammar.github.io/illustrated-transformer/)
+[Positional Encoding](https://kazemnejad.com/blog/transformer_architecture_positional_encoding/)
+
