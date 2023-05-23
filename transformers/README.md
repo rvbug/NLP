@@ -46,6 +46,7 @@ For building features, one can use the FCNN (*F*ully *C*onnected *N*eural *N*etw
 
 `Note: In the Paper The encoder network has 2 section. First, is the Attention and Second is FCNN`
 
+<img width="700" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/decf4f74-c119-43d7-b619-59a5caf425b8">
 
 
 ## Self Attention
