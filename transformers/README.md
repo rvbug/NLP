@@ -11,6 +11,28 @@ This is called `Selective Masking`
 The process of selective masking is called `Attention` but to create these masks are not a straight-forward. 
 In Transformers, the mask is generated via techniques which will be discussed shortly.
 
+```python
+import numpy as np
+
+# q is the query i.e. the feature we are interested in
+q = np.array([0,1, 0])
+# k is the collection of mask also known as key in row format
+k = np.array([[0,0,0], [0,1,1], [0,0,0]])
+
+# dot product 
+q @ k
+
+# Going to query for 2nd row in the key matrix
+
+#### output
+# array([0, 1, 1])
+```
+
+So, the Mask Lookup is going to be used using  - $\(Q * K^T)$
+`T` is transpose since it will make this in Column format as shown below
+
+
+
 
 ## Self Attention
 
