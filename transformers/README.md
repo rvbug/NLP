@@ -1,8 +1,14 @@
 # Basics
 
 Masking - Means To hide something. Keeping most of the values as  zero and multiply (element wise) it with the features will ensure we can attend to the most important word as the the rest of the values will be zero. This will help in masking the unwated feature and next word predictions will become very strong. 
-
 This is called `Selective Masking`
+
+`Transition Matrix` - Is a way to represent sequences of words. One of them is known as Markov chain. They are the Keys (K).
+The Markov chain is probabilities for the next word depending on the recent word(s)
+  - If next word depend only on single most recent word - then it is `first order Markov Model`
+  - If next word depend on two most recent words - then it is `second order Markov Model`
+ 
+
 
 ## Attention 
 
@@ -18,6 +24,7 @@ import numpy as np
 # q is the query i.e. the feature we are interested in
 q = np.array([0,1, 0])
 # k is the collection of mask also known as key in row format
+
 k = np.array([[0,0,0], [0,1,1], [0,0,0]])
 
 # dot product 
