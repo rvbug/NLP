@@ -28,9 +28,10 @@ q @ k
 # array([0, 1, 1])
 ```
 
-So, the Mask Lookup is going to be used using  - $\(Q * K^T)$
+So, the Mask Lookup is going to be used using  - $\(Q * K^T)$  
 `T` is transpose since it will make this in Column format as shown below
 
+<img width="638" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/ba3a9cc0-46b8-44ae-94c3-c3c3ad2e6f2a">
 
 
 
