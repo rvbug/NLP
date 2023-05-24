@@ -1,5 +1,10 @@
-# Transformers
+# Introduction
+
 RNNs had problems dealing with large sentences and LSTMs were slow and sequential. This was solved by using Transformers which works on the whole sentences and some parts of the arichitecture can run in parallel. 
+
+Transformers uses encoder-decoder architecture :-
+
+<img width="317" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/d72433cb-4ef7-48e2-9aca-9f4923a7b6ad">
 
 
 
@@ -69,9 +74,13 @@ For building features, one can use the FCNN (*F*ully *C*onnected *N*eural *N*etw
 
 
 
-
-
 ## Positional Encoding
+
+The input  is tokenized and fed as a whole sentence so we need to keep the position of the token in the sequence so we use Positional Encoding. This encoding is added to each token embedding.
+
+
+
+
 <br>
 <br>
 <br>
