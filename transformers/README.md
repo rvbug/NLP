@@ -78,6 +78,7 @@ For building features, one can use the FCNN (*F*ully *C*onnected *N*eural *N*etw
 
 The input  is tokenized and fed as a whole sentence so we need to keep the position of the token in the sequence so we use Positional Encoding. This encoding is added to each token embedding.
 
+<img width="322" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/4ad3af82-0a0e-4a44-b805-cb46335b4ae7">
 
 
 
