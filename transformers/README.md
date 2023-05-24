@@ -18,7 +18,7 @@ The lower the parameters, the semantic meaning might not be captured with greate
 This is the trade off.
 
 
-## Positional Encoding
+# Positional Encoding
 
 The input is tokenized and fed as a whole sentence so we need to keep the position of the token in the sequence hat is why we use Positional Encoding. 
 This encoding is added with each token embedding.
@@ -27,7 +27,7 @@ This encoding is added with each token embedding.
 
 
 
-## Masking
+# Masking
 
 Masking - Means To hide something. Keeping most of the values as  zero and multiply (element wise) it with the features will ensure we can attend to the most important word as the the rest of the values will be zero. This will help in masking the unwated feature and next word predictions will become very strong. 
 This is called `Selective Masking`
@@ -38,7 +38,7 @@ The Markov chain is probabilities for the next word depending on the recent word
   - If next word depend on two most recent words - then it is `second order Markov Model`
  
  
-### Attention 
+# Attention 
 
 The process of selective masking is called `Attention` but to create these masks are not a straight-forward. 
 In Transformers, the mask is generated via techniques which will be discussed shortly.
