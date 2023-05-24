@@ -87,7 +87,7 @@ dim = Embedding Dimensions *(usually 512)*
 <br>
 <br>
 # References
-[Attention is all you need](https://)  
-[Jay Alammar's Blog](http://jalammar.github.io/illustrated-transformer/)  
-[Positional Encoding](https://kazemnejad.com/blog/transformer_architecture_positional_encoding/)  
 
+[Attention is all you need](https://)  
+[Jay Alammar's Blog](http://jalammar.github.io/illustrated-transformer/)   
+[Positional Encoding](https://kazemnejad.com/blog/transformer_architecture_positional_encoding/)   
