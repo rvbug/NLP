@@ -1,3 +1,9 @@
+# Transformers
+RNNs had problems dealing with large sentences and LSTMs were slow and sequential. This was solved by using Transformers which works on the whole sentences and some parts of the arichitecture can run in parallel. 
+
+
+
+
 # Basics
 
 Masking - Means To hide something. Keeping most of the values as  zero and multiply (element wise) it with the features will ensure we can attend to the most important word as the the rest of the values will be zero. This will help in masking the unwated feature and next word predictions will become very strong. 
@@ -11,6 +17,19 @@ The Markov chain is probabilities for the next word depending on the recent word
 
 
 ## Attention 
+
+## Embeddings
+The Transformer models will be very large with over billion parameters if we do not use embeddings.  Embeddings helps reduces the parameters.
+The lower the parameters, the semantic meaning might not be captured with greater accuracy. Higer the parameters, the computation costs will be high.
+This is the trade off.
+
+Embeddings are nothing but projecting matrix from one space to another using matrix multiplication
+Embedding helps representing words in any number of dimensions and is usually dense (vs sparse if you use one-hot encoding).
+
+There are two types of embeddings Word (1-Hot, W2V etc) - which deals with words and Sentence Embeddings which is for an entire sentence
+
+
+
 
 ### Masking 
 
@@ -49,13 +68,7 @@ For building features, one can use the FCNN (*F*ully *C*onnected *N*eural *N*etw
 <img width="700" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/decf4f74-c119-43d7-b619-59a5caf425b8">
 
 
-## Embeddings
-The Transformer models will be very large with over billion parameters if we do not use embeddings.  Embeddings helps reduces the parameters.
-The lower the parameters, the semantic meaning might not be captured with greater accuracy. Higer the parameters, the computation costs will be high.
-This is the trade off.
 
-Embeddings are nothing but projecting matrix from one space to another using matrix multiplication
-Embedding helps representing words in any number of dimensions and is usually dense (vs sparse if you use one-hot encoding).
 
 
 ## Positional Encoding
