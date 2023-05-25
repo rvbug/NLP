@@ -9,8 +9,7 @@ Transformers uses encoder-decoder architecture :-
 # Basics
 
 ## 1. Average & Wt Average
-`Average` is used to calculate mean  
-`Weighted Average` is used to improve data accuracy 
+Average - To calculate mean & Weighted Average is used to improve data accuracy 
 
 <img width="396" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/0edb77b7-7fbc-47e7-9ad3-a8916fde1711">
 
