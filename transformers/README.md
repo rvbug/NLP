@@ -1,12 +1,26 @@
 # Introduction
 
-RNNs had problems dealing with large sentences and LSTMs were slow and sequential. This was solved by using Transformers which works on the whole sentences and some parts of the arichitecture can run in parallel. 
+RNNs had problems dealing with large sentences and LSTMs were slow and sequential. This was solved by using Transformers. It can work on the entire sentences (instead of words) and some parts of the arichitecture even can run in parallel. 
 
 Transformers uses encoder-decoder architecture :-
 
 <img width="317" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/d72433cb-4ef7-48e2-9aca-9f4923a7b6ad">
 
 # Basics
+
+## Average & Wt Average
+`Average` is used to calculate mean  
+`Weighted Average` is used to improve data accuracy 
+
+## Context Vector / Thought Vector
+Was first used in `seq-to-seq` models where all the inputs are generated in the **Encoder layer** and is represented in a fixed format known as Context Vector.
+This vector is then passed to the **Decoder layer** as inputs to generate output sequence. You can think of Context Vector as compact representation of the inputs capturing the  semantic meaning. Disadvtange - If the sequences are very long then performance drops drastically as the input information can be lost.
+
+
+
+
+
+
 ## Masking
 Masking - Means To hide something. Keeping most of the values as  zero and multiply (element wise) it with the features will ensure we can attend to the most important word as the the rest of the values will be zero. This will help in masking the unwated feature and next word predictions will become very strong. 
 This is called `Selective Masking`
