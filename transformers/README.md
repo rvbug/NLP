@@ -34,8 +34,10 @@ Instead of encoding the input sequence into a single fixed context vector, can w
 It is also known as the retrival process by using the weighted average of values
 
 <img width="194" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/864cadcc-bdb4-4aef-a9d7-13e52489acf0">
+<img width="404" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/c0fe6f5b-e6e4-482f-ad28-66d307b46cd1">
+<br>
 
-`Softmax` function helps in non linesrity and also to scale weights between 0 & 1.
+`Softmax` helps in non linearity and also to scale weights between 0 & 1.
 
 
 ## Masking
