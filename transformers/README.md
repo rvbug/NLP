@@ -21,20 +21,21 @@ This vector is then passed to the **Decoder layer** as inputs to generate output
 
 So, instead of encoding input to fixed sized context vector, what can be done? 
 
+## Query & Keys
+
+
+## Values
+
+
 
 ## Attention 
 
 Instead of encoding the input sequence into a single fixed context vector, can we build a context vector for each output time step? This is known as Attention
 It is also known as the retrival process by using the weighted average of values
 
+<img width="194" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/864cadcc-bdb4-4aef-a9d7-13e52489acf0">
 
-### Query & Key
-
-### Values
-
-
-
-
+`Softmax` function helps in non linesrity and also to scale weights between 0 & 1.
 
 
 ## Masking
