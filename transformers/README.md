@@ -8,11 +8,11 @@ Transformers uses encoder-decoder architecture :-
 
 # Basics
 
-## Average & Wt Average
+## 1. Average & Wt Average
 `Average` is used to calculate mean  
 `Weighted Average` is used to improve data accuracy 
 
-## Context Vector / Thought Vector
+## 2. Context Vector / Thought Vector
 Was first used in `seq-to-seq` models where all the inputs are generated in the **Encoder layer** and is represented in a fixed format known as Context Vector.
 This vector is then passed to the **Decoder layer** as inputs to generate output sequence. You can think of Context Vector as compact representation of the inputs capturing the  semantic meaning. Disadvtange - If the sequences are very long then performance drops drastically as the input information can be lost.
 
@@ -36,7 +36,7 @@ The Markov chain is probabilities for the next word depending on the recent word
 
 The process of selective masking is called `Attention` but to create these masks are not a straight-forward. 
 In Transformers, the mask is generated via techniques which will be discussed shortly.
-
+Attention is also known as the retrival process by using the weighted average of values
 
 ```python
 import numpy as np
