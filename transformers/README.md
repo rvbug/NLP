@@ -9,15 +9,24 @@ Transformers uses encoder-decoder architecture :-
 # Basics
 
 ## 1. Average & Wt Average
-Average - To calculate mean & Weighted Average is used to improve data accuracy 
+Average - To calculate mean & Weighted Average is used to improve data accuracy   
 
 <img width="396" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/0edb77b7-7fbc-47e7-9ad3-a8916fde1711">
 
-
-
 ## 2. Context Vector / Thought Vector
 Was first used in `seq-to-seq` models where all the inputs are generated in the **Encoder layer** and is represented in a fixed format known as Context Vector.
+It contains all the information from the hidden state of Encoder Layer.
+
 This vector is then passed to the **Decoder layer** as inputs to generate output sequence. You can think of Context Vector as compact representation of the inputs capturing the  semantic meaning. Disadvtange - If the sequences are very long then performance drops drastically as the input information can be lost.
+
+
+## Attention 
+
+To solve the above challenge with **`Fixed sized Context Vector`**, Attention is used. It is also known as the retrival process by using the weighted average of values
+
+
+
+
 
 
 
@@ -25,6 +34,9 @@ This vector is then passed to the **Decoder layer** as inputs to generate output
 
 
 ## Masking
+
+(The process of selective masking is called `Attention` but to create these masks are not a straight-forward)
+
 Masking - Means To hide something. Keeping most of the values as  zero and multiply (element wise) it with the features will ensure we can attend to the most important word as the the rest of the values will be zero. This will help in masking the unwated feature and next word predictions will become very strong. 
 This is called `Selective Masking`
 
@@ -35,11 +47,6 @@ The Markov chain is probabilities for the next word depending on the recent word
   - If next word depend on two most recent words - then it is `second order Markov Model`
 
 
-## Attention 
-
-The process of selective masking is called `Attention` but to create these masks are not a straight-forward. 
-In Transformers, the mask is generated via techniques which will be discussed shortly.
-Attention is also known as the retrival process by using the weighted average of values
 
 ```python
 import numpy as np
