@@ -19,14 +19,18 @@ It contains all the information from the hidden state of Encoder Layer.
 
 This vector is then passed to the **Decoder layer** as inputs to generate output sequence. You can think of Context Vector as compact representation of the inputs capturing the  semantic meaning. Disadvtange - If the sequences are very long then performance drops drastically as the input information can be lost.
 
+So, instead of encoding input to fixed sized context vector, what can be done? 
+
 
 ## Attention 
 
-To solve the above challenge with **`Fixed sized Context Vector`**, Attention is used. It is also known as the retrival process by using the weighted average of values
+Instead of encoding the input sequence into a single fixed context vector, can we build a context vector for each output time step? This is known as Attention
+It is also known as the retrival process by using the weighted average of values
 
 
+### Query & Key
 
-
+### Values
 
 
 
