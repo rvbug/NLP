@@ -33,6 +33,8 @@ So Context Vector is noting but `Weighted sum of input vectors`
 
 ## Attention 
 
+
+
 Instead of encoding the input sequence into a single fixed context vector, can we build a context vector for each output time step?    
 Yes, this is known as Attention (A retrival process which uses weighted average of values).   
 
@@ -50,6 +52,9 @@ Where attended Weights = `np.dot(Q, K)`
 You can make the query, key and value vectors smaller using projection vectors via linear transformations.  
 These Projections are learnable parameters ($W_q, W_k, W_v$)
 
+
+## Self Attention
+The idea is to add a contextual information to the words in a sentence. i.e. how important is that word to the others
 
 
 ## Masking
