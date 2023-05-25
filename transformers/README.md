@@ -19,7 +19,10 @@ It contains all the information from the hidden state of Encoder Layer.
 
 This vector is then passed to the **Decoder layer** as inputs to generate output sequence. You can think of Context Vector as compact representation of the inputs capturing the  semantic meaning. Disadvtange - If the sequences are very long then performance drops drastically as the input information can be lost.
 
-So, instead of encoding input to fixed sized context vector, what can be done? 
+Instead of encoding input to fixed sized context vector, what can be done? 
+
+So Context Vector is noting but `Weighted sum of input vectors`
+
 
 ## Query & Keys
 
@@ -30,14 +33,23 @@ So, instead of encoding input to fixed sized context vector, what can be done?
 
 ## Attention 
 
-Instead of encoding the input sequence into a single fixed context vector, can we build a context vector for each output time step? This is known as Attention
-It is also known as the retrival process by using the weighted average of values
+Instead of encoding the input sequence into a single fixed context vector, can we build a context vector for each output time step?    
+Yes, this is known as Attention (A retrival process which uses weighted average of values).   
+
+Attention can be calculated by performing the dot-product (MatMul) of the dynamically attended weights with the input sequence (V).
+
+Where attended Weights = `np.dot(Q, K)`
 
 <img width="194" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/864cadcc-bdb4-4aef-a9d7-13e52489acf0">
 <img width="404" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/c0fe6f5b-e6e4-482f-ad28-66d307b46cd1">
 <br>
 
 `Softmax` helps in non linearity and also to scale weights between 0 & 1.
+
+`Note`: For efficency in calculation Stack all all Queries together & Keys together (np.vstack?)  
+You can make the query, key and value vectors smaller using projection vectors via linear transformations.  
+These Projections are learnable parameters ($W_q, W_k, W_v$)
+
 
 
 ## Masking
