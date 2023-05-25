@@ -12,6 +12,10 @@ Transformers uses encoder-decoder architecture :-
 `Average` is used to calculate mean  
 `Weighted Average` is used to improve data accuracy 
 
+<img width="396" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/0edb77b7-7fbc-47e7-9ad3-a8916fde1711">
+
+
+
 ## 2. Context Vector / Thought Vector
 Was first used in `seq-to-seq` models where all the inputs are generated in the **Encoder layer** and is represented in a fixed format known as Context Vector.
 This vector is then passed to the **Decoder layer** as inputs to generate output sequence. You can think of Context Vector as compact representation of the inputs capturing the  semantic meaning. Disadvtange - If the sequences are very long then performance drops drastically as the input information can be lost.
