@@ -7,15 +7,25 @@ In Deep learning, we give importance to a word in a sentence. This is called `At
 
 This was first used in `Encoder-Decoder` Architecture where the final outout of RNN/LSTM was used to create a **Context Vector** but they were still unable to capture semantic meaning if the sentences were longer. RNNs also had problems dealing with large sentences and LSTMs were always slow and sequential. 
 
+<img width="317" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/d72433cb-4ef7-48e2-9aca-9f4923a7b6ad">
+
+
 Bahdanau et al (2015) suggested that not only can all the input words be taken into account in the context vector, but relative importance should also be given to each one of them.
 
 This was the change in the way attention was used called `Transformers`. It can not only work on the entire sentences (instead of words) but some parts of the arichitecture even can run in parallel. 
 
+(\$h_t$)
+
+## Context Vector
+
+Content Vector **(\$C_i$)** for output **(\$Y_i$)** is generated using the weight sum of hidden states **(\$h_i$)** using the formula
 
 
-Transformers uses encoder-decoder architecture :-
+**\$C_i = \sum{_i^n} \alpha{_i}{_j} * h_i $**
 
-<img width="317" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/d72433cb-4ef7-48e2-9aca-9f4923a7b6ad">
+where \$n$ is number of words and \$\alpha{_i}{_j}$ is calculated using Softmax function
+
+
 
 # Basics
 
