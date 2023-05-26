@@ -29,6 +29,10 @@ So Context Vector is noting but `Weighted sum of input vectors`
 
 ## Values
 
+# Encoder
+
+
+# Decoder
 
 
 ## Attention 
