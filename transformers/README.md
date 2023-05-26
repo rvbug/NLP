@@ -1,6 +1,17 @@
 # Introduction
 
-RNNs had problems dealing with large sentences and LSTMs were slow and sequential. This was solved by using Transformers. It can work on the entire sentences (instead of words) and some parts of the arichitecture even can run in parallel. 
+The idea of `Trasformers` changed everything. It was the biggest breakthrough in Deep Learning.
+When we are concentrating on one thing, our brain discards the rest.
+
+In Deep learning, we give importance to a word in a sentence. This is called `Attention`.
+
+This was first used in `Encoder-Decoder` Architecture where the final outout of RNN/LSTM was used to create a **Context Vector** but they were still unable to capture semantic meaning if the sentences were longer. RNNs also had problems dealing with large sentences and LSTMs were always slow and sequential. 
+
+Bahdanau et al (2015) suggested that not only can all the input words be taken into account in the context vector, but relative importance should also be given to each one of them.
+
+This was the change in the way attention was used called `Transformers`. It can not only work on the entire sentences (instead of words) but some parts of the arichitecture even can run in parallel. 
+
+
 
 Transformers uses encoder-decoder architecture :-
 
