@@ -18,6 +18,8 @@ This was the change in the way attention was used called `Transformers`. It can 
 
 ## Context Vector
 
+
+
 Content Vector **(\$C_i$)** for output **(\$Y_i$)** is generated using the weight sum of hidden states **(\$h_i$)** using the formula
 
 
