@@ -48,7 +48,7 @@ So Context Vector is noting but `Weighted sum of input vectors`
 
 
 ## Query & Keys
-
+keys are the inputs 
 
 ## Values
 
