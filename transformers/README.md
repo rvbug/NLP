@@ -50,8 +50,8 @@ The output of the emebedding is now multiplied with a some weighing factor to ge
 <br>
 
 If we now have to have a contextualised representation of 3rd vector then : <br>
+<img width="182" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/e17f33a6-9b0f-4a96-b346-ca3995883e9d">
 
-<img width="367" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/c1150c66-60af-4f62-a9b3-9ef4afe998de">
 
 
 
