@@ -30,28 +30,14 @@ Context Vector is nothing but `Weighted sum of input vectors`
 ## 2. Context Vector / Thought Vector
 
 Context Vector is a compact representation (in a fixed format) trying to capture the semantic meaning of the input sentences. 
-Typically, all information (hidden states) from the **Encoder layer** creates these context vectors sending it to **Decoder layer** as inputs to generate output sequence. 
+Typically, all information (hidden states) from the **Encoder layer** creates these context vectors sending it to **Decoder layer** as inputs and generate output sequences. 
 
 One of the major disadvtange is that the performance of these architecture drops drastically if the input sequences are very long
-
 
 <img width="343" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/b846c8eb-6b51-4cc8-8067-916921d2ca74"> 
 
 
-## Query & Keys
-keys are the inputs 
-
-## Values
-
-## Encoder
-
-
-## Decoder
-
-
 ## Attention 
-
-
 
 Instead of encoding the input sequence into a single fixed context vector, can we build a context vector for each output time step?    
 Yes, this is known as Attention (A retrival process which uses weighted average of values).   
@@ -171,6 +157,15 @@ Content Vector **(\$C_i$)** for output **(\$Y_i$)** is generated using the weigh
 
 where \$n$ is number of words and \$\alpha{_i}{_j}$ is calculated using Softmax function
 
+## Query & Keys
+keys are the inputs 
+
+## Values
+
+## Encoder
+
+
+## Decoder
 
 
 <br>
