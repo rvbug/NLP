@@ -77,6 +77,10 @@ These matrix can be learnt through back propogation (follow the while lines). Th
 <img width="414" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/0db0a9ec-739a-4195-bc1f-251c281d3e06">
 <br>
 
+<img width="185" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/07e64c70-c71b-4343-aa23-f79fec596bf7">
+
+
+
 If you look at the [Attention is all you need](https://arxiv.org/pdf/1706.03762.pdf) paper, the `Dot Product` attention uses the formula as below.  
 Softmax function helps to attain non linearity and helps scaling weights between 0 & 1.  
 
