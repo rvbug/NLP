@@ -45,9 +45,12 @@ This is basis of **"Attention"**
 Most simplified version of the attention is as shown below.
 Typically, the input will be tokenized and run through embedding layer helping to understand context of words.
 The output of the emebedding is now multiplied with a some weighing factor to generate output which has lot more context. 
-If you observe carefully, Step 3 is a `Feed Forward Neural Network` 
-
+<br>
 <img width="1047" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/31c649a5-8d70-4a2f-a101-4b979d499468">
+<br>
+
+If we have to look at the 3rd vector for attention, here's how it will look
+
 
 
 
