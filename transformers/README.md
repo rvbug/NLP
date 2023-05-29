@@ -39,27 +39,39 @@ One of the major disadvtange is that the performance of these architecture drops
 
 ## Attention 
 
-Instead of encoding the input sequence into a single fixed context vector, can we build a context vector for each output time step?    
-Yes, this is known as Attention (A retrival process which uses weighted average of values).   
+Instead of encoding the input sequence into a single fixed context vector, is it possible to build a context vector for each output time step? 
+This is the basis of **"Attention"**
 
-Attention can be calculated by performing the dot-product (MatMul) of the dynamically attended weights with the input sequence (V).
-
-Where attended Weights = `np.dot(Q, K)`
+If you look at the [Attention is all you need](https://arxiv.org/pdf/1706.03762.pdf) paper, the `Dot Product` attention uses the formula as below.  
+Softmax function helps to attain non linearity and helps scaling weights between 0 & 1.  
 
 <img width="194" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/864cadcc-bdb4-4aef-a9d7-13e52489acf0">
 <img width="404" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/c0fe6f5b-e6e4-482f-ad28-66d307b46cd1">
 <br>
 
-`Softmax` helps in non linearity and also to scale weights between 0 & 1.
 
+
+
+
+
+
+
+
+
+
+
+<br><br><br><br><br>
 `Note`: For efficency in calculation Stack all all Queries together & Keys together (np.vstack?)  
 You can make the query, key and value vectors smaller using projection vectors via linear transformations.  
 These Projections are learnable parameters ($W_q, W_k, W_v$)
 
 
+
+
+
+
 ## Self Attention
 The idea is to add a contextual information to the words in a sentence. i.e. how important is that word to the others
-
 
 ## Masking
 
@@ -178,6 +190,6 @@ keys are the inputs
 <br>
 # References
 
-[Attention is all you need](https://)  
-[Jay Alammar's Blog](http://jalammar.github.io/illustrated-transformer/)   
-[Positional Encoding](https://kazemnejad.com/blog/transformer_architecture_positional_encoding/)   
+[Attention is all you need](https://arxiv.org/pdf/1706.03762.pdf)  
+[Jay Alammar's Blog](http://jalammar.github.io/illustrated-transformer/)    
+[Positional Encoding](https://kazemnejad.com/blog/transformer_architecture_positional_encoding/)     
