@@ -79,6 +79,13 @@ These matrix can be learnt through back propogation (follow the while lines). Th
 You can stack any number of **Self Attention** block like so <br>
 <img width="185" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/07e64c70-c71b-4343-aa23-f79fec596bf7">
 
+## Multi-Head Attention
+
+N = Vocab size (all the words in your corpus)
+n = Maximum sequence length in (# of words with largest sentence) *[2048 in GPT-3]*
+dim = Embedding Dimensions *(usually 512)*
+
+
 
 <br>
 # Positional Encoding
@@ -109,32 +116,6 @@ For building features, one can use the FCNN (*F*ully *C*onnected *N*eural *N*etw
 <br>
 
 
-## Multi-Head Attention
-
-N = Vocab size (all the words in your corpus)
-n = Maximum sequence length in (# of words with largest sentence) *[2048 in GPT-3]*
-dim = Embedding Dimensions *(usually 512)*
-
-
-
-## Context Vector
-
-Content Vector **(\$C_i$)** for output **(\$Y_i$)** is generated using the weight sum of hidden states **(\$h_i$)** using the formula
-
-
-**\$C_i = \sum{_i^n} \alpha{_i}{_j} * h_i $**
-
-where \$n$ is number of words and \$\alpha{_i}{_j}$ is calculated using Softmax function
-
-## Query & Keys
-keys are the inputs 
-
-## Values
-
-## Encoder
-
-
-## Decoder
 
 
 <br>
