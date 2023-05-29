@@ -196,3 +196,4 @@ keys are the inputs
 [Attention is all you need](https://arxiv.org/pdf/1706.03762.pdf)  
 [Jay Alammar's Blog](http://jalammar.github.io/illustrated-transformer/)    
 [Positional Encoding](https://kazemnejad.com/blog/transformer_architecture_positional_encoding/)     
+[Deep Learning - Transformers](https://d2l.ai/chapter_attention-mechanisms-and-transformers/index.html)  
