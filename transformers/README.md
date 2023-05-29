@@ -1,11 +1,12 @@
 # Introduction
 
-The idea of `Trasformers` changed everything. It was the biggest breakthrough in Deep Learning.
-When we are concentrating on one thing, our brain discards the rest.
+Before understanding what Transformers are, it is important to undersatand what `Attention` & `Self Attention` mechanisms. This concept made the Transformers one of the biggest breakthroughs in Deep Learning.
 
-In Deep learning, we give importance to a word in a sentence. This is called `Attention`.
+As humans, we tend to concentrate on the things that matters the most i.e. we pay more attention to the things which are interesting. The same concept can be applied to machines which is what this section will take about.
 
-This was first used in `Encoder-Decoder` Architecture where the final outout of RNN/LSTM was used to create a **Context Vector** but they were still unable to capture semantic meaning if the sentences were longer. RNNs also had problems dealing with large sentences and LSTMs were always slow and sequential. 
+`In Deep learning, we give importance to a word in a sentence. This is called Attention`
+
+Attention were first used  `Encoder-Decoder` Architecture where the final output of RNN/LSTM creates a **Context Vector**. If the setences were longer, these vectors were still unable to capture semantic meaning. RNNs also had problems dealing with large sentences and on the ther hand, LSTMs were slow and process inouts sequentially. 
 
 <img width="317" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/d72433cb-4ef7-48e2-9aca-9f4923a7b6ad">
 
