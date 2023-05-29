@@ -8,7 +8,7 @@ As humans, we tend to concentrate on the things that matters the most i.e. we pa
 
 Attention were first used  `Encoder-Decoder` Architecture where the final output of RNN/LSTM creates a **Context Vector**. If the setences were longer, these vectors were still unable to capture semantic meaning. RNNs also had problems dealing with large sentences and on the ther hand, LSTMs were slow and process inouts sequentially. 
 
-<img width="317" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/d72433cb-4ef7-48e2-9aca-9f4923a7b6ad">
+<img width="343" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/b846c8eb-6b51-4cc8-8067-916921d2ca74">
 
 
 Bahdanau et al (2015) suggested that not only can all the input words be taken into account in the context vector, but relative importance should also be given to each one of them.
