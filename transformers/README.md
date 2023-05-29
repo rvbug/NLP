@@ -36,8 +36,19 @@ One of the major disadvtange is that the performance of these architecture drops
 
 <img width="343" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/b846c8eb-6b51-4cc8-8067-916921d2ca74"> 
 
+## 3. Embeddings
 
-## Attention 
+Embeddings are nothing but projecting matrix from one space to another using matrix multiplication
+Embedding helps representing words in any number of dimensions and is usually dense (vs sparse if you use one-hot encoding).
+
+There are two types of embeddings `Word` (dealing with words) and `Sentence Embeddings` which is for an entire sentence
+
+The Transformer models will be very large with over billion parameters if we do not use embeddings. Embeddings helps reduces the parameters.
+The lower the parameters, the semantic meaning might not be captured with greater accuracy. Higher the parameters, the computation costs will be high.
+This is the trade off.
+
+
+# Attention 
 
 Instead of encoding the input sequence into a single fixed context vector, is it possible to build a context vector for each output time step? 
 This is basis of **"Attention"**
@@ -58,6 +69,7 @@ The blue dotted lines - that is `Attention` for you. You can think of it as belo
 
 
 # Self Attention
+The idea is to add a contextual information to the words in a sentence. i.e. how important is that word to the others
 <br>
 <img width="414" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/0db0a9ec-739a-4195-bc1f-251c281d3e06">
 <br>
@@ -74,58 +86,8 @@ These Projections are learnable parameters ($W_q, W_k, W_v$)
 
 
 
-## Self Attention
-The idea is to add a contextual information to the words in a sentence. i.e. how important is that word to the others
-
-## Masking
-
-(The process of selective masking is called `Attention` but to create these masks are not a straight-forward)
-
-Masking - Means To hide something. Keeping most of the values as  zero and multiply (element wise) it with the features will ensure we can attend to the most important word as the the rest of the values will be zero. This will help in masking the unwated feature and next word predictions will become very strong. 
-This is called `Selective Masking`
-
-## Transition Matrix  
-Is a way to represent sequences of words i.e which words are before or after the current one. One of them is known as Markov chain. **They are the Keys (K)**.
-The Markov chain is probabilities for the next word depending on the recent word(s)
-  - If next word depend only on single most recent word - then it is `first order Markov Model`
-  - If next word depend on two most recent words - then it is `second order Markov Model`
 
 
-
-```python
-import numpy as np
-
-# q is the query i.e. the feature we are interested in
-q = np.array([0,1, 0])
-# k is the collection of mask also known as key in row format
-
-k = np.array([[0,0,0], [0,1,1], [0,0,0]])
-
-# dot product 
-q @ k
-
-# Going to query for 2nd row in the key matrix
-
-#### output
-# array([0, 1, 1])
-```
-
-So, the Mask Lookup is going to be used using  - $\(Q * K^T)$ . `T` is transpose since it will make this in Column format like so:
-
-<img width="638" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/ba3a9cc0-46b8-44ae-94c3-c3c3ad2e6f2a">
-
-
-
-# Embeddings
-
-Embeddings are nothing but projecting matrix from one space to another using matrix multiplication
-Embedding helps representing words in any number of dimensions and is usually dense (vs sparse if you use one-hot encoding).
-
-There are two types of embeddings `Word` (dealing with words) and `Sentence Embeddings` which is for an entire sentence
-
-The Transformer models will be very large with over billion parameters if we do not use embeddings. Embeddings helps reduces the parameters.
-The lower the parameters, the semantic meaning might not be captured with greater accuracy. Higher the parameters, the computation costs will be high.
-This is the trade off.
 
 
 # Positional Encoding
