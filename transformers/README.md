@@ -69,7 +69,10 @@ The blue dotted lines - that is `Attention` for you. You can think of it as belo
 
 
 # Self Attention
-The idea is to add a contextual information to the words in a sentence. i.e. how important is that word to the others
+The idea is to add a contextual information to the words in a sentence. i.e. how important is that word to the others.  
+Input Embedding vectors \$v = [v_0, v_1...v_n]$ is passed through \$W_Q, W_K, W_V$ which are Matrix for Query, Key and Value respectively.
+
+These matrix can be learnt through back propogation (follow the while lines). The entire block is called self attention 
 <br>
 <img width="414" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/0db0a9ec-739a-4195-bc1f-251c281d3e06">
 <br>
@@ -80,13 +83,6 @@ Softmax function helps to attain non linearity and helps scaling weights between
 <img width="194" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/864cadcc-bdb4-4aef-a9d7-13e52489acf0">
 <img width="404" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/c0fe6f5b-e6e4-482f-ad28-66d307b46cd1">
 <br>
-`Note`: For efficency in calculation Stack all all Queries together & Keys together (np.vstack?)  
-You can make the query, key and value vectors smaller using projection vectors via linear transformations.  
-These Projections are learnable parameters ($W_q, W_k, W_v$)
-
-
-
-
 
 
 
