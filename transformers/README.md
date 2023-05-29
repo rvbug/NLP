@@ -57,10 +57,11 @@ The blue dotted lines - that is `Attention` for you. You can think of it as belo
 <br>
 
 
+# Self Attention
+<br>
+<img width="414" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/0db0a9ec-739a-4195-bc1f-251c281d3e06">
+<br>
 
-
-
-<br><br><br><br><br>
 If you look at the [Attention is all you need](https://arxiv.org/pdf/1706.03762.pdf) paper, the `Dot Product` attention uses the formula as below.  
 Softmax function helps to attain non linearity and helps scaling weights between 0 & 1.  
 
