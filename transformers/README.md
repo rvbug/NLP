@@ -47,8 +47,7 @@ Typically, the input will be tokenized and run through embedding layer helping t
 The output of the emebedding is now multiplied with a some weighing factor to generate output which has lot more context. 
 If you observe carefully, Step 3 is a `Feed Forward Neural Network` 
 
-<img width="1197" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/820247a1-3f8c-4f88-b5fc-73d060215e2e">
-
+<img width="1047" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/31c649a5-8d70-4a2f-a101-4b979d499468">
 
 
 
