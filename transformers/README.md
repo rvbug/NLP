@@ -1,51 +1,41 @@
 # Introduction
 
-Before understanding what Transformers are, it is important to undersatand what `Attention` & `Self Attention` mechanisms. This concept made the Transformers one of the biggest breakthroughs in Deep Learning.
+Before understanding what Transformers are, it is important to undersatand what `Attention` & `Self Attention` mechanisms are. 
+This concept made the Transformers one of the biggest breakthroughs in Deep Learning.
 
 As humans, we tend to concentrate on the things that matters the most i.e. we pay more attention to the things which are interesting. The same concept can be applied to machines which is what this section will take about.
 
-`In Deep learning, we give importance to a word in a sentence. This is called Attention`
+Attention were first used  `Encoder-Decoder` Architecture where the final output of RNN/LSTM creates a **Context Vector**. 
+If setences were longer, these vectors were still unable to capture semantic meaning. 
+RNNs also had problems dealing with large sentences and on the ther hand, LSTMs were slow and process inputs sequentially. <br>
 
-Attention were first used  `Encoder-Decoder` Architecture where the final output of RNN/LSTM creates a **Context Vector**. If the setences were longer, these vectors were still unable to capture semantic meaning. RNNs also had problems dealing with large sentences and on the ther hand, LSTMs were slow and process inouts sequentially. 
+So there has to be a way where these context vectors should capture relative importance of the one word with others - a concept called **`Attention`** used in Transformers
 
-<img width="343" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/b846c8eb-6b51-4cc8-8067-916921d2ca74">
+Another big change in Transformer architecture is ability to process the inputs in parallel - `Multi-Head` attention
+<br>
 
-
-Bahdanau et al (2015) suggested that not only can all the input words be taken into account in the context vector, but relative importance should also be given to each one of them.
-
-This was the change in the way attention was used called `Transformers`. It can not only work on the entire sentences (instead of words) but some parts of the arichitecture even can run in parallel. 
-
-(\$h_t$)
-
-## Context Vector
-
-
-
-Content Vector **(\$C_i$)** for output **(\$Y_i$)** is generated using the weight sum of hidden states **(\$h_i$)** using the formula
-
-
-**\$C_i = \sum{_i^n} \alpha{_i}{_j} * h_i $**
-
-where \$n$ is number of words and \$\alpha{_i}{_j}$ is calculated using Softmax function
-
-
+Before we jump in to Transformer and it's architecture, we will cover some basics
 
 # Basics
 
 ## 1. Average & Wt Average
-Average - To calculate mean & Weighted Average is used to improve data accuracy   
+
+Average is used to calculate mean & Weighted Average is used to improve data accuracy like shown below. <br>
 
 <img width="396" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/0edb77b7-7fbc-47e7-9ad3-a8916fde1711">
+<br>
+
+Context Vector is nothing but `Weighted sum of input vectors`
 
 ## 2. Context Vector / Thought Vector
-Was first used in `seq-to-seq` models where all the inputs are generated in the **Encoder layer** and is represented in a fixed format known as Context Vector.
-It contains all the information from the hidden state of Encoder Layer.
 
-This vector is then passed to the **Decoder layer** as inputs to generate output sequence. You can think of Context Vector as compact representation of the inputs capturing the  semantic meaning. Disadvtange - If the sequences are very long then performance drops drastically as the input information can be lost.
+Context Vector is a compact representation (in a fixed format) trying to capture the semantic meaning of the input sentences. 
+Typically, all information (hidden states) from the **Encoder layer** creates these context vectors sending it to **Decoder layer** as inputs to generate output sequence. 
 
-Instead of encoding input to fixed sized context vector, what can be done? 
+One of the major disadvtange is that the performance of these architecture drops drastically if the input sequences are very long
 
-So Context Vector is noting but `Weighted sum of input vectors`
+
+<img width="343" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/b846c8eb-6b51-4cc8-8067-916921d2ca74"> 
 
 
 ## Query & Keys
@@ -171,6 +161,15 @@ n = Maximum sequence length in (# of words with largest sentence) *[2048 in GPT-
 dim = Embedding Dimensions *(usually 512)*
 
 
+
+## Context Vector
+
+Content Vector **(\$C_i$)** for output **(\$Y_i$)** is generated using the weight sum of hidden states **(\$h_i$)** using the formula
+
+
+**\$C_i = \sum{_i^n} \alpha{_i}{_j} * h_i $**
+
+where \$n$ is number of words and \$\alpha{_i}{_j}$ is calculated using Softmax function
 
 
 
