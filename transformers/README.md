@@ -49,7 +49,7 @@ The output of the emebedding is now multiplied with a some weighing factor to ge
 <img width="1047" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/31c649a5-8d70-4a2f-a101-4b979d499468">
 <br>
 
-If we now have to add context to the 3rd vector above, here's how it will look
+If we now have to have a contextualised representation of 3rd vector then :
 
 
 
