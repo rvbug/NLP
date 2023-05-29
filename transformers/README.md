@@ -114,20 +114,10 @@ For building features, one can use the FCNN (*F*ully *C*onnected *N*eural *N*etw
 
 <br>
 <br>
+<br>
 
 
-
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
 # References
-
 [Attention is all you need](https://arxiv.org/pdf/1706.03762.pdf)  
 [Jay Alammar's Blog](http://jalammar.github.io/illustrated-transformer/)    
 [Positional Encoding](https://kazemnejad.com/blog/transformer_architecture_positional_encoding/)     
