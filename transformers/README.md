@@ -42,6 +42,8 @@ One of the major disadvtange is that the performance of these architecture drops
 Instead of encoding the input sequence into a single fixed context vector, is it possible to build a context vector for each output time step? 
 This is basis of **"Attention"**
 
+Below image shows the inputs which is multiplied with a weighted factor to generate the output sequences. 
+
 <img width="166" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/0b4e6bfb-e9da-4722-a8a9-047aceae2e09">
 
 
