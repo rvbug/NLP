@@ -44,13 +44,11 @@ This is basis of **"Attention"**
 
 Below image shows the inputs which is multiplied with a weighted factor to generate the output sequences. 
 
-<img width="166" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/0b4e6bfb-e9da-4722-a8a9-047aceae2e09">
 
 
 
 
-
-
+<img width="1172" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/c5a8d887-4214-44d7-af15-e4073f73dbf1">
 
 
 
