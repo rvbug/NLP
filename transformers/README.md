@@ -76,20 +76,11 @@ These matrix can be learnt through back propogation (follow the while lines). Th
 <br>
 <img width="414" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/0db0a9ec-739a-4195-bc1f-251c281d3e06">
 <br>
-
+You can stack any number of **Self Attention** block like so <br>
 <img width="185" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/07e64c70-c71b-4343-aa23-f79fec596bf7">
 
 
-
-If you look at the [Attention is all you need](https://arxiv.org/pdf/1706.03762.pdf) paper, the `Dot Product` attention uses the formula as below.  
-Softmax function helps to attain non linearity and helps scaling weights between 0 & 1.  
-
-<img width="194" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/864cadcc-bdb4-4aef-a9d7-13e52489acf0">
-<img width="404" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/c0fe6f5b-e6e4-482f-ad28-66d307b46cd1">
 <br>
-
-
-
 # Positional Encoding
 
 The input is tokenized and fed as a whole sentence so we need to keep the position of the token in the sequence hat is why we use Positional Encoding. 
