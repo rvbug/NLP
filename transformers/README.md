@@ -25,6 +25,71 @@ Average is used to calculate mean & Weighted Average is used to improve data acc
 <img width="396" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/0edb77b7-7fbc-47e7-9ad3-a8916fde1711">
 <br>
 
+```python
+
+# Calculate Average
+import numpy as np
+
+a = np.array([1,2,3,4])
+print(a, len(a))
+total = 0
+for i in range(0, len(a)):
+  total = total + a[i]
+
+avg = total/len(a)
+print(avg)
+
+##### output
+# [1 2 3 4] 4
+# 2.5
+```
+```python
+# weighted average
+
+import numpy as np
+
+inputs = np.random.random(size=(3,))
+weights = np.random.random(size=(3,))
+print(inputs, weights)
+
+total_inputs  = 0
+total_wt = 0
+
+for i in range(0, len(inputs)):
+  total_wt = total_wt + weights[i]
+  total_inputs = total_inputs + (weights[i] * inputs[0])
+
+print("numerator -> ", total_inputs)
+print("Weight total -> " ,total_wt)
+
+avg_wt = total_inputs/total_wt
+print("average weight -> ", avg_wt)
+
+
+##### output
+# array([0.44889423, 0.4959316 , 0.44081456]),
+# array([0.44100897, 0.13360837, 0.81872552])
+
+# numerator ->  0.6254635748021422
+# Weight total ->  1.3933428598614812
+# average weight ->  0.44889423330042577
+
+## Manual calculation
+# inputs * weight 
+print((0.44100897 * 0.44889423 ) + (0.13360837 * 0.4959316) + (0.81872552 * 0.44081456))
+# Total weight
+print(0.44100897 + 0.13360837 + 0.81872552)
+
+# weighted average
+print(((0.44100897 * 0.44889423 ) + (0.13360837 * 0.4959316) + (0.81872552 * 0.44081456) )/ (0.44100897 + 0.13360837 + 0.81872552 ))
+
+### output
+# 0.6251331245783063
+# 1.39334286
+# 0.4486570696449446
+
+```
+<br>
 Context Vector is nothing but `Weighted sum of input vectors`
 
 ## 1.2 Context Vector / Thought Vector
