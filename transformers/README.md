@@ -36,7 +36,16 @@ One of the major disadvtange is that the performance of these architecture drops
 
 <img width="343" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/b846c8eb-6b51-4cc8-8067-916921d2ca74"> 
 
-## 3. Embeddings
+## 3. Linear Layer
+
+If output of NN is a linear function of the inputs then this layer is called a `Linear Layer`. In other words it can perform linearly transformations on the input data.   
+\$o/p = f(input)$
+
+In the attention mechanism, the Linear layer does not have a bias term but only weights.   
+
+If we design a good NN, it can easily understand more complex non-linear functions.  
+
+## 4. Embeddings
 
 Embeddings are nothing but projecting matrix from one space to another using matrix multiplication
 Embedding helps representing words in any number of dimensions and is usually dense (vs sparse if you use one-hot encoding).
@@ -80,6 +89,10 @@ You can stack any number of **Self Attention** block like so <br>
 <img width="185" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/07e64c70-c71b-4343-aa23-f79fec596bf7">
 
 ## Multi-Head Attention
+
+Imagine a sentence having multiple attention, is there a way to parallelize it? We could use this idea to make the attention mechanism very efficient 
+
+
 
 N = Vocab size (all the words in your corpus)
 n = Maximum sequence length in (# of words with largest sentence) *[2048 in GPT-3]*
