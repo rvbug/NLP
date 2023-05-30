@@ -90,7 +90,10 @@ You can stack any number of **Self Attention** block like so <br>
 
 ## Multi-Head Attention
 
-Imagine a sentence having multiple attention, is there a way to parallelize it? We could use this idea to make the attention mechanism very efficient 
+Imagine a sentence having multiple attention, is there a way to parallelize it? We could use this idea to make the attention mechanism very efficient.
+
+<img width="321" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/00f736cf-38ae-44be-b794-7fe10832a95b">
+
 
 
 
