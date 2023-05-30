@@ -162,6 +162,32 @@ The Transformer models will be very large with over billion parameters if we do 
 The lower the parameters, the semantic meaning might not be captured with greater accuracy. Higher the parameters, the computation costs will be high.
 This is the trade off.
 
+```python
+
+embedding_layer = tf.keras.layers.Embedding(5, 5) # input_dim and output_dim
+result = embedding_layer(tf.constant([1, 2, 3])) # input
+result.numpy()
+
+### output
+# 3 rows with embeddings as 5 as output
+# array([[-0.01179491,  0.00178748,  0.04282233,  0.04032335, -0.03939786],
+#       [-0.03083142, -0.04890538,  0.02782083,  0.04680533, -0.02373978],
+#       [-0.0127743 ,  0.02861612,  0.00080406, -0.03974758,  0.01630092]],
+#      dtype=float32)
+
+```
+
+```python
+for the above sequence, you can create a word embeddings
+
+vocab_len = len(tokenizer.word_index) + 1
+embedding_layer = tf.keras.layers.Embedding(vocab_len, 5) # to represente each with 5 features
+result = embedding_layer(tf.convert_to_tensor(sequences)) # always convery to numpy or tensors
+print(result.numpy())
+result.shape # Shape will be "TensorShape([3, 3, 5])]" (batch_size, input_len, output_dim)
+
+```
+
 
 # 2. Attention 
 
