@@ -109,6 +109,7 @@ In the paper, you would see a block for both Encoder and Decoder as it was speci
 The input is tokenized and fed as a whole sentence so track the position of the token in the sequence, we use Positional Encoding. 
 Encoding is added on top of the embedding.
 
+<img width="329" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/5ce93bb3-2e48-47ef-91ea-df602d1fbd4a">
 
 
 
