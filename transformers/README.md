@@ -88,18 +88,11 @@ These matrix can be learnt through back propogation (follow the while lines). Th
 You can stack any number of **Self Attention** block like so <br>
 <img width="185" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/07e64c70-c71b-4343-aa23-f79fec596bf7">
 
-## Multi-Head Attention
+# Multi-Head Attention
 
 Imagine a sentence having multiple attention, is there a way to parallelize it? We could use this idea to make the attention mechanism very efficient.
 
-<img width="321" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/00f736cf-38ae-44be-b794-7fe10832a95b">
-
-
-
-
-N = Vocab size (all the words in your corpus)
-n = Maximum sequence length in (# of words with largest sentence) *[2048 in GPT-3]*
-dim = Embedding Dimensions *(usually 512)*
+<img width="400" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/00f736cf-38ae-44be-b794-7fe10832a95b">
 
 
 
