@@ -61,5 +61,23 @@ print("a+b = ", a + b)
 ```
   
 
+ ### Dot Product
+ ```python
+ 
+ import numpy as np
 
+# Multiply element wise and then add
+
+a = np.array([1,1,0,0])
+b = np.array([1,1,0,0])
+np.dot(a, b) #1*1 + 1*1 + 0*0 + 0*0
+
+## output
+# 2
+ 
+ ```
+ 
  ### Reshape
+ 
+ 
+ 
