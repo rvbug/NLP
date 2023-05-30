@@ -98,12 +98,11 @@ Imagine a sentence having multiple attention, is there a way to parallelize it? 
 <img width="162" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/2f9de3e2-8efa-4d5d-b875-f9f243148e4a">
 <br>
 
-#### Encoder & Decoder
-In the paper, there is mention of Encoder and Decoder. This was specifically used for Language Translation task. But since we are focusing only on NLP skipping the `Decoder` will make sense.
-
-#### Focusing on Encoder
+### Encoder & Decoder
+In the paper, there is mention of Encoder and Decoder. This was specifically used for Language Translation task. But since we are focusing only on NLP skipping the `Decoder` will make sense. Here's how the Encoder looks like and how they can be stacked
+<br>
 <img width="431" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/a57ea8fe-7b28-4f2e-8582-b23a19e1a829">
-
+<br>
 
 # Positional Encoding
 
