@@ -94,11 +94,16 @@ Imagine a sentence having multiple attention, is there a way to parallelize it? 
 <img width="400" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/09eea38e-e43b-4db2-826a-2fe9c2aa7ac7">
 <br>
 
-Stacking Multi-headed attention models
+### Stacking Multi-headed attention models <br>
 <img width="162" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/2f9de3e2-8efa-4d5d-b875-f9f243148e4a">
-
-
 <br>
+
+#### Encoder & Decoder
+In the paper, there is mention of Encoder and Decoder. This was specifically used for Language Translation task. But since we are focusing only on NLP skipping the `Decoder` will make sense.
+
+#### Focusing on Encoder
+
+
 # Positional Encoding
 
 The input is tokenized and fed as a whole sentence so we need to keep the position of the token in the sequence hat is why we use Positional Encoding. 
