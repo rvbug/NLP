@@ -110,7 +110,48 @@ In the attention mechanism, the Linear layer does not have a bias term but only 
 
 If we design a good NN, it can easily understand more complex non-linear functions.  
 
-## 1.4 Embeddings
+## 1.4 Word Tokenize
+```python
+
+import numpy as np
+import tensorflow as tf
+from tensorflow.keras.preprocessing.text import Tokenizer
+
+sent = [
+    "this is an example of tokenizer",
+    "tokenizer, splits sentences",
+    "another example"
+]
+
+tokenizer = Tokenizer(lower=True)
+tokenizer.fit_on_texts(sent)
+
+print("sentence count -> ", tokenizer.document_count)
+print("\n vocab -> ", tokenizer.word_index)
+print("\n vocab length -> ", len(tokenizer.word_index))
+print("\n matrix shape", tokenizer.texts_to_matrix(sent, mode="binary").shape)
+
+# how does the text look after assigning numbers to the word
+sequences = tokenizer.texts_to_sequences(sent)
+print("\n showing the sequence\n ",sequences)
+
+
+
+#### output
+# sentence count ->  3
+
+# vocab ->  {'example': 1, 'tokenizer': 2, 'this': 3, 'is': 4, 'an': 5, 'of': 6, 'splits': 7, 'sentences': 8, 'another': 9}
+
+# vocab length ->  9
+
+# matrix shape (3, 10)
+
+# showing the sequence
+#  [[3, 4, 5, 1, 6, 2], [2, 7, 8], [9, 1]]
+
+```
+
+## 1.5 Embeddings
 
 Embeddings are nothing but projecting matrix from one space to another using matrix multiplication
 Embedding helps representing words in any number of dimensions and is usually dense (vs sparse if you use one-hot encoding).
