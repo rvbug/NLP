@@ -61,18 +61,9 @@ The lower the parameters, the semantic meaning might not be captured with greate
 This is the trade off.
 
 ```python
-
-embedding_layer = tf.keras.layers.Embedding(5, 5) # input_dim and output_dim
-result = embedding_layer(tf.constant([1, 2, 3])) # input
-result.numpy()
-
-### output
-# 3 rows with embeddings as 5 as output
-# array([[-0.01179491,  0.00178748,  0.04282233,  0.04032335, -0.03939786],
-#       [-0.03083142, -0.04890538,  0.02782083,  0.04680533, -0.02373978],
-#       [-0.0127743 ,  0.02861612,  0.00080406, -0.03974758,  0.01630092]],
-#      dtype=float32)
-
+embedding_layer = tf.keras.layers.Embedding(3, 5) # (vocab_size+1, feature)
+result = embedding_layer(tf.constant([1, 2])) # (2,)
+result.shape # TensorShape([2, 5]))
 ```
 
 [See the sample code here](https://github.com/rvbug/NLP/blob/main/transformers/token_embeddings.py)
