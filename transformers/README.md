@@ -16,9 +16,9 @@ Another big change in Transformer architecture is ability to process the inputs 
 
 Before we jump in to Transformer and it's architecture, we will cover some basics
 
-# Basics
+# 1. Basics
 
-## 1. Average & Wt Average
+## 1.1 Average & Wt Average
 
 Average is used to calculate mean & Weighted Average is used to improve data accuracy like shown below. <br>
 
@@ -27,7 +27,7 @@ Average is used to calculate mean & Weighted Average is used to improve data acc
 
 Context Vector is nothing but `Weighted sum of input vectors`
 
-## 2. Context Vector / Thought Vector
+## 1.2 Context Vector / Thought Vector
 
 Context Vector is a compact representation (in a fixed format) trying to capture the semantic meaning of the input sentences. 
 Typically, all information (hidden states) from the **Encoder layer** creates these context vectors sending it to **Decoder layer** as inputs and generate output sequences. 
@@ -36,7 +36,7 @@ One of the major disadvtange is that the performance of these architecture drops
 
 <img width="343" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/b846c8eb-6b51-4cc8-8067-916921d2ca74"> 
 
-## 3. Linear Layer
+## 1.3 Linear Layer
 
 If output of NN is a linear function of the inputs then this layer is called a `Linear Layer`. In other words it can perform linearly transformations on the input data.   
 \$o/p = f(input)$
@@ -45,7 +45,7 @@ In the attention mechanism, the Linear layer does not have a bias term but only 
 
 If we design a good NN, it can easily understand more complex non-linear functions.  
 
-## 4. Embeddings
+## 1.4 Embeddings
 
 Embeddings are nothing but projecting matrix from one space to another using matrix multiplication
 Embedding helps representing words in any number of dimensions and is usually dense (vs sparse if you use one-hot encoding).
@@ -57,7 +57,7 @@ The lower the parameters, the semantic meaning might not be captured with greate
 This is the trade off.
 
 
-# Attention 
+# 2. Attention 
 
 Instead of encoding the input sequence into a single fixed context vector, is it possible to build a context vector for each output time step? 
 This is basis of **"Attention"**
@@ -76,8 +76,7 @@ The blue dotted lines - that is `Attention` for you. You can think of it as belo
 <img width="126" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/ccd03cf7-e0d2-42bf-979b-61a8f4c008ae">
 <br>
 
-
-# Self Attention
+# 3. Self Attention
 The idea is to add a contextual information to the words in a sentence. i.e. how important is that word to the others.  
 Input Embedding vectors \$v = [v_0, v_1...v_n]$ is passed through \$W_Q, W_K, W_V$ which are Matrix for Query, Key and Value respectively.
 
@@ -88,7 +87,7 @@ These matrix can be learnt through back propogation (follow the while lines). Th
 You can stack any number of **Self Attention** block like so <br>
 <img width="185" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/07e64c70-c71b-4343-aa23-f79fec596bf7">
 
-# Multi-Head Attention
+# 4. Multi-Head Attention
 
 Imagine a sentence having multiple attention, is there a way to parallelize it? We could use this idea to make the attention mechanism very efficient.<br>
 <img width="400" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/09eea38e-e43b-4db2-826a-2fe9c2aa7ac7">
@@ -98,21 +97,17 @@ Imagine a sentence having multiple attention, is there a way to parallelize it? 
 <img width="162" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/2f9de3e2-8efa-4d5d-b875-f9f243148e4a">
 <br>
 
-### Encoder & Decoder
-In the paper, there is mention of Encoder and Decoder. This was specifically used for Language Translation task. But since we are focusing only on NLP skipping the `Decoder` will make sense. Here's how the Encoder looks like and how they can be stacked
+# 5. Encoder Block
+In the paper, you would see a block for both Encoder and Decoder as it was specifically used for Language Translation task. But since we are focusing only on NLP skipping the Decoder will make sense. Here's how the Encoder looks like and how they can be stacked
+
 <br>
 <img width="431" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/a57ea8fe-7b28-4f2e-8582-b23a19e1a829">
 <br>
 
-# Positional Encoding
+# 6. Positional Encoding
 
-The input is tokenized and fed as a whole sentence so we need to keep the position of the token in the sequence hat is why we use Positional Encoding. 
-This encoding is added with each token embedding.
-
-<img width="322" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/4ad3af82-0a0e-4a44-b805-cb46335b4ae7">
-
-
-
+The input is tokenized and fed as a whole sentence so track the position of the token in the sequence, we use Positional Encoding. 
+Encoding is added on top of the embedding.
 
 
 
@@ -131,6 +126,7 @@ For building features, one can use the FCNN (*F*ully *C*onnected *N*eural *N*etw
 <br>
 <br>
 <br>
+<img width="322" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/4ad3af82-0a0e-4a44-b805-cb46335b4ae7">
 
 
 # References
