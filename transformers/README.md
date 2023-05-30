@@ -25,7 +25,7 @@ Average is used to calculate mean & Weighted Average is used to improve data acc
 <img width="396" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/0edb77b7-7fbc-47e7-9ad3-a8916fde1711">
 <br>
 
-[Code Available here](https://github.com/rvbug/NLP/blob/main/transformers/weighted_avg.py)
+[Check out the code here](https://github.com/rvbug/NLP/blob/main/transformers/weighted_avg.py)
 
 <br>
 Context Vector is nothing but `Weighted sum of input vectors`
@@ -74,7 +74,9 @@ result.numpy()
 #      dtype=float32)
 
 ```
-[Code](https://github.com/rvbug/NLP/blob/main/transformers/token_embeddings.py)
+
+[See the sample code here](https://github.com/rvbug/NLP/blob/main/transformers/token_embeddings.py)
+
 
 # 2. Attention 
 
