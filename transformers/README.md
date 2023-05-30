@@ -25,70 +25,8 @@ Average is used to calculate mean & Weighted Average is used to improve data acc
 <img width="396" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/0edb77b7-7fbc-47e7-9ad3-a8916fde1711">
 <br>
 
-```python
+[Code Available here](https://github.com/rvbug/NLP/blob/main/transformers/weighted_avg.py)
 
-# Calculate Average
-import numpy as np
-
-a = np.array([1,2,3,4])
-print(a, len(a))
-total = 0
-for i in range(0, len(a)):
-  total = total + a[i]
-
-avg = total/len(a)
-print(avg)
-
-##### output
-# [1 2 3 4] 4
-# 2.5
-```
-```python
-# weighted average
-
-import numpy as np
-
-inputs = np.random.random(size=(3,))
-weights = np.random.random(size=(3,))
-print(inputs, weights)
-
-total_inputs  = 0
-total_wt = 0
-
-for i in range(0, len(inputs)):
-  total_wt = total_wt + weights[i]
-  total_inputs = total_inputs + (weights[i] * inputs[0])
-
-print("numerator -> ", total_inputs)
-print("Weight total -> " ,total_wt)
-
-avg_wt = total_inputs/total_wt
-print("average weight -> ", avg_wt)
-
-
-##### output
-# array([0.44889423, 0.4959316 , 0.44081456]),
-# array([0.44100897, 0.13360837, 0.81872552])
-
-# numerator ->  0.6254635748021422
-# Weight total ->  1.3933428598614812
-# average weight ->  0.44889423330042577
-
-## Manual calculation
-# inputs * weight 
-print((0.44100897 * 0.44889423 ) + (0.13360837 * 0.4959316) + (0.81872552 * 0.44081456))
-# Total weight
-print(0.44100897 + 0.13360837 + 0.81872552)
-
-# weighted average
-print(((0.44100897 * 0.44889423 ) + (0.13360837 * 0.4959316) + (0.81872552 * 0.44081456) )/ (0.44100897 + 0.13360837 + 0.81872552 ))
-
-### output
-# 0.6251331245783063
-# 1.39334286
-# 0.4486570696449446
-
-```
 <br>
 Context Vector is nothing but `Weighted sum of input vectors`
 
@@ -110,48 +48,8 @@ In the attention mechanism, the Linear layer does not have a bias term but only 
 
 If we design a good NN, it can easily understand more complex non-linear functions.  
 
-## 1.4 Word Tokenize
-```python
 
-import numpy as np
-import tensorflow as tf
-from tensorflow.keras.preprocessing.text import Tokenizer
-
-sent = [
-    "this is an example of tokenizer",
-    "tokenizer, splits sentences",
-    "another example"
-]
-
-tokenizer = Tokenizer(lower=True)
-tokenizer.fit_on_texts(sent)
-
-print("sentence count -> ", tokenizer.document_count)
-print("\n vocab -> ", tokenizer.word_index)
-print("\n vocab length -> ", len(tokenizer.word_index))
-print("\n matrix shape", tokenizer.texts_to_matrix(sent, mode="binary").shape)
-
-# how does the text look after assigning numbers to the word
-sequences = tokenizer.texts_to_sequences(sent)
-print("\n showing the sequence\n ",sequences)
-
-
-
-#### output
-# sentence count ->  3
-
-# vocab ->  {'example': 1, 'tokenizer': 2, 'this': 3, 'is': 4, 'an': 5, 'of': 6, 'splits': 7, 'sentences': 8, 'another': 9}
-
-# vocab length ->  9
-
-# matrix shape (3, 10)
-
-# showing the sequence
-#  [[3, 4, 5, 1, 6, 2], [2, 7, 8], [9, 1]]
-
-```
-
-## 1.5 Embeddings
+## 1.4 Tokenize & Embeddings
 
 Embeddings are nothing but projecting matrix from one space to another using matrix multiplication
 Embedding helps representing words in any number of dimensions and is usually dense (vs sparse if you use one-hot encoding).
@@ -176,18 +74,7 @@ result.numpy()
 #      dtype=float32)
 
 ```
-
-```python
-for the above sequence, you can create a word embeddings
-
-vocab_len = len(tokenizer.word_index) + 1
-embedding_layer = tf.keras.layers.Embedding(vocab_len, 5) # to represente each with 5 features
-result = embedding_layer(tf.convert_to_tensor(sequences)) # always convery to numpy or tensors
-print(result.numpy())
-result.shape # Shape will be "TensorShape([3, 3, 5])]" (batch_size, input_len, output_dim)
-
-```
-
+[Code](https://github.com/rvbug/NLP/blob/main/transformers/token_embeddings.py)
 
 # 2. Attention 
 
