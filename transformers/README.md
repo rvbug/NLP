@@ -102,6 +102,7 @@ Imagine a sentence having multiple attention, is there a way to parallelize it? 
 In the paper, there is mention of Encoder and Decoder. This was specifically used for Language Translation task. But since we are focusing only on NLP skipping the `Decoder` will make sense.
 
 #### Focusing on Encoder
+<img width="431" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/a57ea8fe-7b28-4f2e-8582-b23a19e1a829">
 
 
 # Positional Encoding
