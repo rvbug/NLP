@@ -42,5 +42,6 @@ Once the embedding vectors are generated, you can find the similarity using dot 
 
 <br>
 <br>
-# References
+# References  
+
 [SBERT - Sentence Transformers](https://www.sbert.net/)
