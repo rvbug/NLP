@@ -1,17 +1,18 @@
 # Introduction
 
-This github helps you understand the basics of NLP, architectures like RNN, LSTM and advanced ones like Transformers and Self Attention.  
+With rise of state-of-the-art AI tools, it is important for us to understand the Intiution and the math behind it and not just using the readily available APIs.
 
-These topics are important to get you started. Code contains very simple explaination that you can use to build up your knowledge on such complex topics.
+Below is how this repository is set up.
 
-I always had trouble understanding and transforming the inputs to feed to neural network so this is my attempt to help those who were as clueless as I was when I first started.
+<br>
 
-We will first understand Matrix and Tensors, followed by simple code for each of the architectures. Basic understanding of NN, gates, attention etc.
-The code presented here does not have any end to end implementation but just enough to understand the missing ingredients. 
 
-One of the biggest challenge is to indefity input shape. lets start with that first!
+<br>
+
+We will start with basics and then move to RNN, LSTM and Transformers. Hopefully it will help your NLP journey. 
 
 Enjoy!!
+
 
 # TOC
 
