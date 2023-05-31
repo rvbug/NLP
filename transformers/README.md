@@ -127,22 +127,11 @@ Positional Vectors can be added to the Embedding vector like so.
 <img width="329" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/5ce93bb3-2e48-47ef-91ea-df602d1fbd4a">
 
 
-
-
 ### FCNN
 For building features, one can use the FCNN (*F*ully *C*onnected *N*eural *N*etwork)
-
-`Note: In the Paper The encoder network has 2 section. First, is the Attention and Second is FCNN`
-
+<br>
 <img width="700" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/decf4f74-c119-43d7-b619-59a5caf425b8">
 
-
-
-
-<br>
-<br>
-<br>
-<img width="322" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/4ad3af82-0a0e-4a44-b805-cb46335b4ae7">
 
 
 # References
