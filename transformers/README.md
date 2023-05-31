@@ -71,8 +71,18 @@ result.shape # TensorShape([2, 5]))
 
 # 2. Attention 
 
+We can look at 2 sentences. What you will see is the use of bank in different context. As human, it is easy for us to determine the usage based on the neighbouring words. For machine, we need to do the same and this is basis of **"Attention"**.
+
+```python
+s1 = "Bank of the river"
+s2 = "money in the Bank"
+```
+Now calculate the similarity of each words with others and then if you are interested in "Bank", "money", "river", then see the weights created as below:
+
+
+
 Instead of encoding the input sequence into a single fixed context vector, is it possible to build a context vector for each output time step? 
-This is basis of **"Attention"**
+
 
 Most simplified version of the attention is as shown below.
 Typically, the input will be tokenized and run through embedding layer helping to understand context of words.
