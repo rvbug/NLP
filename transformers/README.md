@@ -182,3 +182,4 @@ Transformer Achitecture is the basic building block of LLMs (Large Language Mode
 [Jay Alammar's Blog](http://jalammar.github.io/illustrated-transformer/)    
 [Positional Encoding](https://kazemnejad.com/blog/transformer_architecture_positional_encoding/)     
 [Deep Learning - Transformers](https://d2l.ai/chapter_attention-mechanisms-and-transformers/index.html)  
+[SBERT - Sentence Transformers](https://www.sbert.net/)
