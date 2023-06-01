@@ -174,7 +174,8 @@ For building features, one can use the FCNN (*F*ully *C*onnected *N*eural *N*etw
 
 # Next Step
 
-Transformer Achitecture is the basic building block of LLMs (Large Language Models) - idea behind all the state-of-the-art AI tools. 
+Transformer Achitectures are the basic building block of LLMs (Large Language Models) 
+You are now ready to learn the state-of-the-art AI tools!!.
 
 
 # References
