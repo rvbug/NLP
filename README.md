@@ -9,50 +9,15 @@ Below is how this repository is set up.
 
 <br>
 
-We will start with basics and then move to RNN, LSTM and Transformers. Hopefully it will help your NLP journey. 
+We will start with basics and then move to RNN, LSTM and finally Transformers which is basic building block of LLMs (Large Language Models). 
 
 Enjoy!!
-
-
-# TOC
-
-
-`learning path to be added - image to be added tomorrow`  
-`add basics of arrays and matrix from Notion notes`    
-`section on input shape of each of the architecture covered here`  
-`code section should have all py file or ipynb file or maybe dagshub?`  
-
-# Learning Path
-
-  Diagram goes here
-
-
-# Details
-
-- Arrays, Matrix & Tensors
-
-- Simple Neural Network
-   * understand input and output shapes
-   * simple program
-
-- Simple RNN
-   * understand input and output shapes
-   * simple program
-
-- LSTM
-   * simple program
-
-
-- Transformers
-    * basics of attention model
 
 
 # Basics
 
 [Understanding Arrays, Matrix, Tensors](https://github.com/rvbug/NLP/tree/main/basics#understanding-arrays-matrix-tensors)
 
-
-  
 
 # Simple Neural Network
 [Neural Network](https://github.com/rvbug/NLP/tree/main/simpleNN#simple-neural-network)
@@ -74,5 +39,6 @@ Enjoy!!
   - [Kaggle](https://kaggle.com)
   - [LaTeX Reference](https://www.latex4technics.com/?note=GW021J)
 
+
 # What's next
-View My Quantum NLP Repo -  [QNLP ](https://github.com/rvbug/QuantumML)  
+Comming soon - Quantum NLP
