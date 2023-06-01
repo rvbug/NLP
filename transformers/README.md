@@ -172,6 +172,9 @@ For building features, one can use the FCNN (*F*ully *C*onnected *N*eural *N*etw
 <br>
 <img width="700" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/decf4f74-c119-43d7-b619-59a5caf425b8">
 
+# Next Step
+
+Transformer Achitecture is the basic building block of LLMs (Large Language Models) - idea behind all the state-of-the-art AI tools. 
 
 
 # References
