@@ -5,8 +5,9 @@ With rise of state-of-the-art AI tools, it is important for us to understand the
 Below is how this repository is set up.
 
 <br>
+<img width="453" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/774eb295-d903-4dbd-bf8e-ddbc633d53f3">
 
-
+<br>
 <br>
 
 We will start with basics and then move to RNN, LSTM and finally Transformers which is basic building block of LLMs (Large Language Models). 
