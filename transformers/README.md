@@ -109,6 +109,9 @@ s2 = "money in the Bank"
 ```
 Now calculate the similarity of each words with others and then if you are interested in "Bank", "money", "river", then see the weights created as below:
 
+<img width="474" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/c086fdee-bf4d-45ae-a777-b5064d76e1a0">
+
+
 
 
 Instead of encoding the input sequence into a single fixed context vector, is it possible to build a context vector for each output time step? 
