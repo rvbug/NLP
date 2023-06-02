@@ -1,8 +1,8 @@
 # Introduction
 
-With rise of state-of-the-art AI tools, it is important for us to understand the Intiution and the math behind it and not just using the readily available APIs.
+With rise of Large Language Models (LLMs), it is important for us to understand Transformers. But to get there, you need to know basics. This repo will guide you through that journey and help better understand the state-of-the-art AI tools. Enjoy!!
 
-Below is how this repository is set up.
+Below is how this repository is set up. 
 
 <br>
 <img width="453" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/774eb295-d903-4dbd-bf8e-ddbc633d53f3">
@@ -10,9 +10,8 @@ Below is how this repository is set up.
 <br>
 <br>
 
-We will start with basics and then move to RNN, LSTM and finally Transformers which is basic building block of LLMs (Large Language Models). 
 
-Enjoy!!
+
 
 
 # Basics
@@ -42,4 +41,4 @@ Enjoy!!
 
 
 # What's next
-Comming soon - Quantum NLP
+Quantum NLP (coming soon)
