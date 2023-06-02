@@ -7,7 +7,7 @@ As humans, we tend to concentrate on the things that matters the most i.e. we pa
 The same concept can be applied to machines.
 
 Attention was first used  `Encoder-Decoder` Architecture where the final output of RNN/LSTM creates a **Context Vector**. 
-If setences were longer, these vectors could not capture semantic meaning. 
+If sentences were longer, these vectors could not capture semantic meaning. 
 RNNs also had it's share of problems dealing with large sentences while LSTMs were slow inputs are processed sequentially. <br>
 
 So, capture relative importance of the one word with others in a context vectors  -  known as **`Attention`**   
