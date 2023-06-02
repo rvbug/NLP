@@ -1,17 +1,17 @@
 # Introduction
 
-Before understanding what Transformers are, it is important to undersatand what `Attention` & `Self Attention` mechanisms are. 
-This concept made the Transformers one of the biggest breakthroughs in Deep Learning.
+Before understanding what Transformers are, it is important to understand what `Attention` & `Self Attention` mechanisms.  
+This concept made the Transformers one of the biggest breakthroughs in Deep Learning and rise of lot of AI tools.
 
-As humans, we tend to concentrate on the things that matters the most i.e. we pay more attention to the things which are interesting. The same concept can be applied to machines which is what this section will take about.
+As humans, we tend to concentrate on the things that matters the most i.e. we pay more attention to the things which are interesting. 
+The same concept can be applied to machines.
 
-Attention were first used  `Encoder-Decoder` Architecture where the final output of RNN/LSTM creates a **Context Vector**. 
-If setences were longer, these vectors were still unable to capture semantic meaning. 
-RNNs also had problems dealing with large sentences and on the ther hand, LSTMs were slow and process inputs sequentially. <br>
+Attention was first used  `Encoder-Decoder` Architecture where the final output of RNN/LSTM creates a **Context Vector**. 
+If setences were longer, these vectors could not capture semantic meaning. 
+RNNs also had it's share of problems dealing with large sentences while LSTMs were slow inputs are processed sequentially. <br>
 
-So there has to be a way where these context vectors should capture relative importance of the one word with others - a concept called **`Attention`** used in Transformers
-
-Another big change in Transformer architecture is ability to process the inputs in parallel - `Multi-Head` attention
+So, capture relative importance of the one word with others in a context vectors  -  known as **`Attention`**   
+Another big change in Transformer architecture is ability to process the inputs in parallel using `Multi-Head` attention
 <br>
 
 Before we jump in to Transformer and it's architecture, we will cover some basics
@@ -20,7 +20,7 @@ Before we jump in to Transformer and it's architecture, we will cover some basic
 
 ## 1.1 Average & Wt Average
 
-Average is used to calculate mean & Weighted Average is used to improve data accuracy like shown below. <br>
+Average is used to calculate mean & Weighted Average is used to improve data accuracy. <br>
 
 <img width="396" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/0edb77b7-7fbc-47e7-9ad3-a8916fde1711">
 <br>
@@ -39,14 +39,16 @@ One of the major disadvtange is that the performance of these architecture drops
 
 <img width="343" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/b846c8eb-6b51-4cc8-8067-916921d2ca74"> 
 
+Instead of encoding the input sequence into a single fixed context vector, is it possible to build a context vector for each output time step?
+
+
 ## 1.3 Linear Layer
 
 If output of NN is a linear function of the inputs then this layer is called a `Linear Layer`. In other words it can perform linearly transformations on the input data.   
 \$o/p = f(input)$
 
 In the attention mechanism, the Linear layer does not have a bias term but only weights.   
-
-If we design a good NN, it can easily understand more complex non-linear functions.  
+Note: if we design a good NN, it can easily understand more complex non-linear functions.   
 
 
 ## 1.4 Tokenize & Embeddings
@@ -54,7 +56,7 @@ If we design a good NN, it can easily understand more complex non-linear functio
 Embeddings are nothing but projecting matrix from one space to another using matrix multiplication
 Embedding helps representing words in any number of dimensions and is usually dense (vs sparse if you use one-hot encoding).
 
-There are two types of embeddings `Word` (dealing with words) and `Sentence Embeddings` which is for an entire sentence
+There are two types of embeddings `Word` (dealing with words) and `Sentence Embeddings` (for entire sentence)
 
 The Transformer models will be very large with over billion parameters if we do not use embeddings. Embeddings helps reduces the parameters.
 The lower the parameters, the semantic meaning might not be captured with greater accuracy. Higher the parameters, the computation costs will be high.
@@ -70,14 +72,14 @@ result.shape # TensorShape([2, 5]))
 
 ## 1.5 Sentence Embeddings
 
-While word embeddings are useful but they do not take into consideration the position or order of the words. This is the concept used in Sentence Embedding.
+While word embeddings are useful but they do not take into consideration the position or order of the words, a concept used in Sentence Embedding.
 So instead of transforming words to number, the entire sentence is converted to numbers. Sentence embeddings are very powerful in the sense that vectors are assigned to each sentences in such a way that every word and it's positions carry importance.
 
 ```python
 pip install -U sentence-transformers
 ```
 
-In the below example you will see the sentence embedding in action. The output of this model is (3, 384) where 3 is the number of sentences and 384 is representation of each sentences. You can call it 384 features.
+In the below example you will see the sentence embedding in action. The output of this model is (3, 384) where 3 is the number of sentences and 384 is representation of each sentences. Think 384 features.
 
 
 ```python
@@ -96,12 +98,12 @@ embeddings = model.encode(sentences)
 print(embeddings.shape) # (3, 384)
 
 ```
-Once the embedding vectors are generated, you can find the similarity using dot product. If the dot product between 2 vector are greater, the sentences will be similar.
+Once the embedding vectors are generated, you can find the similarity using dot product. If the dot product between 2 vector are greater, those 2 sentences are similar.
 
 
 # 2. Attention 
 
-We can look at 2 sentences. What you will see is the use of bank in different context. As human, it is easy for us to determine the usage based on the neighbouring words. For machine, we need to do the same and this is basis of **"Attention"**.
+Look at 2 sentences below. What you will see is the use of bank in different context. As human, it is easy for us to determine the usage based on the neighbouring words. For machine, we need to do the same.
 
 ```python
 s1 = "Bank of the river"
@@ -110,14 +112,10 @@ s2 = "money in the Bank"
 Now calculate the similarity of each words with others and then if you are interested in "Bank", "money", "river", then see the weights created as below:
 
 <img width="474" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/c086fdee-bf4d-45ae-a777-b5064d76e1a0">
+ 
 
 
-
-
-Instead of encoding the input sequence into a single fixed context vector, is it possible to build a context vector for each output time step? 
-
-
-Most simplified version of the attention is as shown below.
+Another simplified version of the attention is  shown below.
 Typically, the input will be tokenized and run through embedding layer helping to understand context of words.
 The output of the emebedding is now multiplied with a some weighing factor to generate output which has lot more context. 
 <br>
@@ -127,7 +125,7 @@ The output of the emebedding is now multiplied with a some weighing factor to ge
 If we now have to have a contextualised representation of 3rd vector then : <br>
 <img width="182" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/e17f33a6-9b0f-4a96-b346-ca3995883e9d">
 <br>
-The blue dotted lines - that is `Attention` for you. You can think of it as below <br>
+The blue dotted lines - that is `Attention` for you. You can think of stacking all the attention block <br>
 <img width="126" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/ccd03cf7-e0d2-42bf-979b-61a8f4c008ae">
 <br>
 
@@ -170,15 +168,11 @@ Positional Vectors can be added to the Embedding vector like so.
 <img width="329" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/5ce93bb3-2e48-47ef-91ea-df602d1fbd4a">
 
 
-### FCNN
-For building features, one can use the FCNN (*F*ully *C*onnected *N*eural *N*etwork)
-<br>
-<img width="700" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/decf4f74-c119-43d7-b619-59a5caf425b8">
 
 # Next Step
 
-Transformer Achitectures are the basic building block of LLMs (Large Language Models) 
-You are now ready to learn the state-of-the-art AI tools!!.
+Transformer Achitectures are the basic building block of LLMs (Large Language Models). You are now ready to learn "state-of-the-art" tools
+Happy Learning!!
 
 
 # References
