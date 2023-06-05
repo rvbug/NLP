@@ -5,7 +5,8 @@ With rise of Large Language Models (LLMs), it is important for us to understand 
 Below is how this repository is set up. 
 
 <br>
-<img width="453" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/774eb295-d903-4dbd-bf8e-ddbc633d53f3">
+
+<img width="303" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/bd65c176-1499-4f5c-b3b4-61abe060a11b">
 
 <br>
 <br>
