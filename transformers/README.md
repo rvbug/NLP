@@ -38,7 +38,7 @@ Typically, all information (hidden states) from the **Encoder layer** creates th
 
 One of the major disadvtange is that the performance of these architecture drops drastically if the input sequences are very long
 
-<img width="383" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/6e044aaf-1921-43b5-8559-fb78e847986c">
+<img width="500" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/6e044aaf-1921-43b5-8559-fb78e847986c">
 
 Instead of encoding the input sequence into a single fixed context vector, is it possible to build a context vector for each output time step?
 
@@ -112,7 +112,7 @@ s2 = "money in the Bank"
 ```
 Now calculate the similarity of each words with others and then if you are interested in "Bank", "money", "river", then see the weights created as below:
 
-<img width="616" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/efa45ef0-dff2-495b-9456-f941c5603ae1">
+<img width="1000" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/efa45ef0-dff2-495b-9456-f941c5603ae1">
 
 
 Another simplified version of the attention is  shown below.
@@ -124,10 +124,10 @@ The output of the emebedding is now multiplied with a some weighing factor to ge
 <br>
 
 If we now have to have a contextualised representation of 3rd vector then : <br>
-<img width="182" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/e17f33a6-9b0f-4a96-b346-ca3995883e9d">
+<img width="300" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/e17f33a6-9b0f-4a96-b346-ca3995883e9d">
 <br>
 The blue dotted lines - that is `Attention` for you. You can think of stacking all the attention block <br>
-<img width="126" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/ccd03cf7-e0d2-42bf-979b-61a8f4c008ae">
+<img width="500" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/ccd03cf7-e0d2-42bf-979b-61a8f4c008ae">
 <br>
 
 # 3. Self Attention
@@ -136,21 +136,21 @@ Input Embedding vectors \$v = [v_0, v_1...v_n]$ is passed through \$W_Q, W_K, W_
 
 These matrix can be learnt through back propogation (follow the while lines). The entire block is called self attention 
 <br>
-<img width="300" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/3ffbe186-2412-4b38-b620-b81beae59db0">
+<img width="500" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/3ffbe186-2412-4b38-b620-b81beae59db0">
 
 <br>
 You can stack any number of **Self Attention** block like so <br>
-<img width="200" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/53315e26-5043-489f-bd8f-68975449a4a7">
+<img width="500" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/53315e26-5043-489f-bd8f-68975449a4a7">
 
 
 # 4. Multi-Head Attention
 
 Imagine a sentence having multiple attention, is there a way to parallelize it? We could use this idea to make the attention mechanism very efficient.<br>
-<img width="339" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/6fa756f5-ec9f-4647-b463-66a12012fdf6">
+<img width="500" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/6fa756f5-ec9f-4647-b463-66a12012fdf6">
 <br>
 
 ### Stacking Multi-headed attention models <br>
-<img width="152" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/3f46263c-9eb3-4462-95f4-7dd487540f90">
+<img width="500" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/3f46263c-9eb3-4462-95f4-7dd487540f90">
 <br>
 
 # 5. Encoder Block
@@ -168,7 +168,7 @@ Encoding is added on top of the embedding.
 Positional Vectors can be added to the Embedding vector like so.   
 <br>
 \$P_0 =$  \$f(i, n)$ <br>
-<img width="350" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/826aa09a-5a1b-402e-bce5-5f0e36310746">
+<img width="500" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/826aa09a-5a1b-402e-bce5-5f0e36310746">
 
 # Next Step
 
