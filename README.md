@@ -27,7 +27,7 @@ Below is how this repository is set up.
 [SimpleRNN](https://github.com/rvbug/NLP/tree/main/simpleRNN#simple-rnn)
 
 # LSTM
-[LSTM](https://github.com/rvbug/NLP/tree/main/simpleRNN#simple-rnn)
+[LSTM](https://github.com/rvbug/NLP/tree/main/lstm)
 
 # Transformers & Attention
 [Transformer](https://github.com/rvbug/NLP/tree/main/transformers)
