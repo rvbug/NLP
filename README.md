@@ -36,7 +36,6 @@ Below is how this repository is set up.
   - [TensorFlow](https://www.tensorflow.org/)
   - [Keras](https://keras.io/api/layers/)
   - [arXiv](https://arxiv.org/)  
-  - [Paper with Code](https://paperswithcode.com/)  
   - [Kaggle](https://kaggle.com)
   - [LaTeX Reference](https://www.latex4technics.com/?note=GW021J)
 
