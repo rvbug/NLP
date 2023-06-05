@@ -2,8 +2,7 @@
 
 ## RNN Foward Pass
 
-
-<img width="200" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/0d975713-3c65-4718-9e7b-2c3ce011eeba">
+<img width="500" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/9d11eaf0-abfa-4d9a-bcb5-b8f141f868bc">
 
 Sequence information is always mantained -
 `o4` is dependent on `x4` and `o3`  
@@ -16,8 +15,7 @@ Number of neurons hidden layers will remain the same since o/p is fed back to th
 
 
 ## RNN Backpropogration
-<img width="300" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/358b5c81-cde2-45ba-987e-1215536e2f28">
-
+<img width="501" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/455b07e9-7175-4bbe-b50a-ab4ac7528368">
 
 
 ## Understanding Input shape
