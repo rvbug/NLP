@@ -43,7 +43,7 @@ print(o2)
 ```
 ## Neural Network
 
-<img width="1073" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/4dbeba80-7adc-4ddf-a697-d84479cb7528">
+<img width="820" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/866fce63-3b24-4851-90b9-4174ad2446ba">
 
 
 ## Simple program
