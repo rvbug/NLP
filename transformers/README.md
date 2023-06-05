@@ -22,7 +22,8 @@ Before we jump in to Transformer and it's architecture, we will cover some basic
 
 Average is used to calculate mean & Weighted Average is used to improve data accuracy. <br>
 
-<img width="396" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/0edb77b7-7fbc-47e7-9ad3-a8916fde1711">
+<img width="400" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/0fda4c8b-9221-4fbd-bb91-a5b32fd4ba64">
+
 <br>
 
 [Check out the code here](https://github.com/rvbug/NLP/blob/main/transformers/weighted_avg.py)
@@ -37,7 +38,7 @@ Typically, all information (hidden states) from the **Encoder layer** creates th
 
 One of the major disadvtange is that the performance of these architecture drops drastically if the input sequences are very long
 
-<img width="343" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/b846c8eb-6b51-4cc8-8067-916921d2ca74"> 
+<img width="383" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/6e044aaf-1921-43b5-8559-fb78e847986c">
 
 Instead of encoding the input sequence into a single fixed context vector, is it possible to build a context vector for each output time step?
 
@@ -111,15 +112,15 @@ s2 = "money in the Bank"
 ```
 Now calculate the similarity of each words with others and then if you are interested in "Bank", "money", "river", then see the weights created as below:
 
-<img width="474" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/c086fdee-bf4d-45ae-a777-b5064d76e1a0">
- 
+<img width="616" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/efa45ef0-dff2-495b-9456-f941c5603ae1">
 
 
 Another simplified version of the attention is  shown below.
 Typically, the input will be tokenized and run through embedding layer helping to understand context of words.
 The output of the emebedding is now multiplied with a some weighing factor to generate output which has lot more context. 
 <br>
-<img width="1047" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/31c649a5-8d70-4a2f-a101-4b979d499468">
+<img width="1044" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/79e99cf0-e511-4063-b29c-9fd38113b761">
+
 <br>
 
 If we now have to have a contextualised representation of 3rd vector then : <br>
@@ -135,26 +136,28 @@ Input Embedding vectors \$v = [v_0, v_1...v_n]$ is passed through \$W_Q, W_K, W_
 
 These matrix can be learnt through back propogation (follow the while lines). The entire block is called self attention 
 <br>
-<img width="414" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/0db0a9ec-739a-4195-bc1f-251c281d3e06">
+<img width="300" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/3ffbe186-2412-4b38-b620-b81beae59db0">
+
 <br>
 You can stack any number of **Self Attention** block like so <br>
-<img width="185" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/07e64c70-c71b-4343-aa23-f79fec596bf7">
+<img width="200" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/53315e26-5043-489f-bd8f-68975449a4a7">
+
 
 # 4. Multi-Head Attention
 
 Imagine a sentence having multiple attention, is there a way to parallelize it? We could use this idea to make the attention mechanism very efficient.<br>
-<img width="400" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/09eea38e-e43b-4db2-826a-2fe9c2aa7ac7">
+<img width="339" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/6fa756f5-ec9f-4647-b463-66a12012fdf6">
 <br>
 
 ### Stacking Multi-headed attention models <br>
-<img width="162" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/2f9de3e2-8efa-4d5d-b875-f9f243148e4a">
+<img width="152" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/3f46263c-9eb3-4462-95f4-7dd487540f90">
 <br>
 
 # 5. Encoder Block
 In the paper, you would see a block for both Encoder and Decoder as it was specifically used for Language Translation task. But since we are focusing only on NLP skipping the Decoder will make sense. Here's how the Encoder looks like and how they can be stacked
 
 <br>
-<img width="431" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/a57ea8fe-7b28-4f2e-8582-b23a19e1a829">
+<img width="466" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/776c6b27-aa01-46d3-a64f-087beaa47e5d">
 <br>
 
 # 6. Positional Encoding
@@ -165,9 +168,7 @@ Encoding is added on top of the embedding.
 Positional Vectors can be added to the Embedding vector like so.   
 <br>
 \$P_0 =$  \$f(i, n)$ <br>
-<img width="329" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/5ce93bb3-2e48-47ef-91ea-df602d1fbd4a">
-
-
+<img width="350" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/826aa09a-5a1b-402e-bce5-5f0e36310746">
 
 # Next Step
 
