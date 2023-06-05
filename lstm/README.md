@@ -1,6 +1,6 @@
 # LSTM
 
-## Introduction
+## Introduction  
 
 Due to the exploding/vanishing gradients in RNNs, LSTM was introduced which can remember longer sequences.
 
