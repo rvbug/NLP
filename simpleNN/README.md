@@ -1,7 +1,7 @@
 # Simple Neural Network
 
 
-## 1D 
+## 1D   
 ```python
 
 import numpy as np
