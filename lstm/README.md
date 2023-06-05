@@ -80,7 +80,7 @@ np.multiply(a, b)
 
 ## Gates
 
-<img width="771" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/7853ea86-5882-4f57-a061-e12c3c562400">
+<img width="801" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/bb521df5-9ff7-4986-87d5-363049e8ac1d">
 
 
 ## Inputs 
