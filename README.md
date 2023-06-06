@@ -1,6 +1,6 @@
 # Introduction
 
-With rise of Large Language Models (LLMs), it is important for us to understand Transformers. But to get there, you need to know basics. This repo will guide you through that journey and help better understand the state-of-the-art AI tools. Enjoy!!
+With rise of Large Language Models (LLMs) like GPT, it is important for us to understand Transformers. But to get there, you need to know the basics and this repo will guide you through that journey to help better understand the state-of-the-art AI tools. Enjoy!!
 
 Below is how this repository is set up. 
 
