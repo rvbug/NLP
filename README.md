@@ -41,4 +41,4 @@ Below is how this repository is set up.
 
 
 # What's next
-Quantum NLP (coming soon)
+Quantum ML (coming soon)
