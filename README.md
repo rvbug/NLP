@@ -1,3 +1,19 @@
+
+<p align="center"> 
+<img width="50" height="50" src="https://github.com/rvbug/NLP/assets/10928536/f2ef3faf-9463-4a75-b308-777f9eec44b0">
+</p>
+
+
+<p align="center"> 
+ 
+  <img src="https://img.shields.io/badge/-Python-000?&logo=Python">
+  <img src="https://img.shields.io/badge/Keras-%23D00000.svg?style=for-plastic&logo=Keras&logoColor=white">
+<img src="https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-plastic&logo=TensorFlow&logoColor=white">
+<img src="https://img.shields.io/badge/Kaggle-035a7d?style=for-plastic&logo=kaggle&logoColor=white">
+</p>
+
+---
+
 # Introduction
 
 With rise of Large Language Models (LLMs) like GPT, it is important for us to understand Transformers. But to get there, you need to know the basics and this repo will guide you through that journey to help better understand the state-of-the-art AI tools. Enjoy!!
