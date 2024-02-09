@@ -57,4 +57,4 @@ Below is how this repository is set up.
 
 
 # What's next
-Quantum ML (coming soon)
+Quantum ML
