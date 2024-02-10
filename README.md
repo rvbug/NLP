@@ -16,37 +16,37 @@
 
 # Introduction
 
-With rise of Large Language Models (LLMs) like GPT, it is important for us to understand Transformers. But to get there, you need to know the basics and this repo will guide you through that journey to help better understand the state-of-the-art AI tools. Enjoy!!
+With rise of Large Language Models (LLMs) like GPT, it is important for us to understand how Transformers works under the hood.   
+But to get there, you need to know the basics. This repo will guide you through the journey of understanding the state-of-the-art AI tools . Enjoy!!
 
-Below is how this repository is set up. 
+
+Below is learning plan...
+
+<p align="center"> 
+<img width="400" height="400" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/bd65c176-1499-4f5c-b3b4-61abe060a11b">
+</p>
+
 
 <br>
-
-<img width="303" alt="image" src="https://github.com/rvbug/NLP/assets/10928536/bd65c176-1499-4f5c-b3b4-61abe060a11b">
-
-<br>
-<br>
-
-
 
 
 
 # Basics
 
-[Understanding Arrays, Matrix, Tensors](https://github.com/rvbug/NLP/tree/main/basics#understanding-arrays-matrix-tensors)
+[Understanding the concepts of Arrays, Matrix, Tensors](https://github.com/rvbug/NLP/tree/main/basics#understanding-arrays-matrix-tensors)
 
 
 # Simple Neural Network
-[Neural Network](https://github.com/rvbug/NLP/tree/main/simpleNN#simple-neural-network)
+[What is Simple Neural Network](https://github.com/rvbug/NLP/tree/main/simpleNN#simple-neural-network)
 
 # RNN
 [SimpleRNN](https://github.com/rvbug/NLP/tree/main/simpleRNN#simple-rnn)
 
-# LSTM
+# Long Short Term Memory
 [LSTM](https://github.com/rvbug/NLP/tree/main/lstm)
 
 # Transformers & Attention
-[Transformer](https://github.com/rvbug/NLP/tree/main/transformers)
+[Transformers & Attention models ](https://github.com/rvbug/NLP/tree/main/transformers)
 
 # References
   - [TensorFlow](https://www.tensorflow.org/)
@@ -57,4 +57,4 @@ Below is how this repository is set up.
 
 
 # What's next
-Quantum ML
+ Quantum ML
