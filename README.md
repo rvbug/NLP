@@ -57,4 +57,5 @@ Below is learning plan...
 
 
 # What's next
- Quantum ML
+ > [Quantum ML Repo](https://github.com/rvbug/q-gravity)  
+ > [Quantum ML Blog](https://rvbug.hashnode.dev/introduction-to-qml)  
